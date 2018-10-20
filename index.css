@@ -1,0 +1,9 @@
+.wrapper{
+    display: flex;
+    text-align: center;
+}
+.content{
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+}
