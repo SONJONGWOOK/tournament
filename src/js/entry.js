@@ -219,6 +219,3 @@ const _shuffleArr = (array) =>{
 
 //시작
 _init()
-
-
-

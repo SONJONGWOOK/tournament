@@ -1,0 +1,23 @@
+{
+  "name": "tournament",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "babel src/js -w -d dist/js",
+    "start": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SONJONGWOOK/tournament.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  }
+}
