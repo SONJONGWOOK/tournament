@@ -318,9 +318,11 @@ const _prevBettle = (e) =>{
             pretotalResult.pop()
             
             // 변경된 목록을 가져와서 중간에 버퍼 결과를 저장
-            // roundResult = totalResult[totalResult.length-1]           
-            roundResult = pretotalResult[pretotalResult.length-1] 
+            roundResult = totalResult[totalResult.length-1]           
+            // roundResult = pretotalResult[pretotalResult.length-1] 
             roundIndex=roundResult.length-1
+            
+            // _bracketBuild(pretotalResult)
             isFinalRound = false
         }
     }

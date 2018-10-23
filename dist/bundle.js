@@ -10010,10 +10010,11 @@ var _prevBettle = function _prevBettle(e) {
       //넘어가기전에 마지막 배열삭제
       totalResult.pop();
       pretotalResult.pop(); // 변경된 목록을 가져와서 중간에 버퍼 결과를 저장
-      // roundResult = totalResult[totalResult.length-1]           
 
-      roundResult = pretotalResult[pretotalResult.length - 1];
-      roundIndex = roundResult.length - 1;
+      roundResult = totalResult[totalResult.length - 1]; // roundResult = pretotalResult[pretotalResult.length-1] 
+
+      roundIndex = roundResult.length - 1; // _bracketBuild(pretotalResult)
+
       isFinalRound = false;
     }
   }
