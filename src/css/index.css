@@ -43,11 +43,6 @@ body{
 #leftImg:hover,#rightImg:hover { 
     opacity: 1
 }
-.selectImg {
-    opacity : 0;
-    transition : all 0.5s ease;
-}
-
 
 .btn_rollover {
     

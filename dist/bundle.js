@@ -9715,7 +9715,8 @@ var rightImg;
 var centerImg;
 var leftEl;
 var rightEl;
-var roundIndex; //대진표에 사용될 리스트
+var roundIndex;
+var tempStyle; //대진표에 사용될 리스트
 
 var list; //페이지 상단 준비
 
@@ -9792,6 +9793,12 @@ var _init = function _init() {
   leftEl = document.querySelector('#leftObj');
   rightEl = document.querySelector('#rightObj');
   roundInfo = document.querySelector('#roundInfo');
+
+  if (tempStyle != undefined) {
+    leftImg.style = tempStyle;
+    rightImg.style = tempStyle;
+  }
+
   totalResult = new Array();
   isFinalRound = false;
   isfinished = false; //데이터준비
@@ -9810,11 +9817,9 @@ var _init = function _init() {
 
   Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#leftImg'), 'click', _selectBettle);
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#rightImg'), 'click', _selectBettle);
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#rightImg'), 'click', _selectBettle); // _addEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
+  // _addEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#leftImg'), 'click', _selectBettle);
-
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#rightImg'), 'click', _selectBettle);
 
   Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#back'), 'click', _prevBettle);
 
@@ -9910,7 +9915,6 @@ var _nextBattle = function _nextBattle(leftIn, rightIn) {
 
 
 var _selectBettle = function _selectBettle(e) {
-  // console.log(e.target.id)
   e.stopPropagation();
   var selectObj = e.target.id;
   roundResult[roundIndex] = {
@@ -9918,26 +9922,42 @@ var _selectBettle = function _selectBettle(e) {
     right: rightObj,
     result: selectObj === 'leftImg' ? leftObj : rightObj
   };
-  var tempStyle;
 
   if (selectObj === 'leftImg') {
-    tempStyle = document.querySelector('#rightImg').style;
-    Object.assign(document.querySelector('#rightImg').style, {
+    tempStyle = rightImg.style;
+    Object.assign(rightImg.style, {
       transition: "all 0.5s ease",
       opacity: '0'
     });
   } else {
-    tempStyle = document.querySelector('#leftImg').style;
-    Object.assign(document.querySelector('#leftImg').style, {
+    tempStyle = leftImg.style;
+    Object.assign(leftImg.style, {
       transition: "all 0.5s ease",
       opacity: '0'
     });
   }
 
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_removeEventLinsten"])(document.querySelector('#leftImg'), 'click', _selectBettle);
+
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_removeEventLinsten"])(document.querySelector('#rightImg'), 'click', _selectBettle);
+
   roundIndex++; //결승전시 다음 배틀 시작을 함수 종료
 
   if (isFinalRound) {
     isfinished = true;
+
+    if (selectObj === 'leftImg') {
+      Object.assign(leftImg.style, {
+        transition: "all 0.5s ease",
+        opacity: '1'
+      });
+    } else {
+      Object.assign(rightImg.style, {
+        transition: "all 0.5s ease",
+        opacity: '1'
+      });
+    }
+
     alert("우승 :" + roundResult[roundResult.length - 1].result.name); //이벤트 삭제 메서드
 
     _end();
@@ -9947,13 +9967,17 @@ var _selectBettle = function _selectBettle(e) {
 
   setTimeout(function () {
     if (selectObj === 'leftImg') {
-      document.querySelector('#rightImg').style = tempStyle;
+      rightImg.style = tempStyle;
     } else {
-      document.querySelector('#leftImg').style = tempStyle;
+      leftImg.style = tempStyle;
     }
 
+    Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#leftImg'), 'click', _selectBettle);
+
+    Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#rightImg'), 'click', _selectBettle);
+
     _startBattle();
-  }, 1000);
+  }, 500);
 }; //뒤로가기기능 
 
 

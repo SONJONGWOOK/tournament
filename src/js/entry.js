@@ -34,6 +34,7 @@ let centerImg
 let leftEl 
 let rightEl
 let roundIndex 
+let tempStyle
 
 //대진표에 사용될 리스트
 let list
@@ -116,7 +117,12 @@ const _init = () =>{
     leftEl = document.querySelector('#leftObj')
     rightEl = document.querySelector('#rightObj')
     roundInfo = document.querySelector('#roundInfo')
-    
+
+    if(tempStyle != undefined ){
+        leftImg.style = tempStyle
+        rightImg.style = tempStyle
+    }
+            
     totalResult = new Array()
     isFinalRound = false
     isfinished = false
@@ -133,8 +139,8 @@ const _init = () =>{
     //클릭 이벤트
     _addEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
     _addEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
-    _addEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
-    _addEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
+    // _addEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
+    // _addEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
     _addEventLinsten(document.querySelector('#back') , 'click' , _prevBettle )
     centerImg.src = vs 
     _startBattle()
@@ -145,6 +151,7 @@ const _init = () =>{
 
 const _end = () =>{
     _bracketBuild(totalResult)
+
     _removeEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
     _removeEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
     _removeEventLinsten(document.querySelector('#back') , 'click' , _prevBettle )
@@ -224,7 +231,7 @@ const _nextBattle = (leftIn , rightIn)=> {
 // 선택시 프로세스
 const _selectBettle = (e) =>{
       
-    // console.log(e.target.id)
+    
     e.stopPropagation()
     let selectObj = e.target.id;
     
@@ -232,27 +239,31 @@ const _selectBettle = (e) =>{
         left : leftObj,
         right : rightObj,
         result : selectObj === 'leftImg' ? leftObj : rightObj 
-     }
-
-     let tempStyle
-
+    }
      if(selectObj === 'leftImg'){
-        tempStyle = document.querySelector('#rightImg').style
-        Object.assign(document.querySelector('#rightImg').style, {transition : "all 0.5s ease" ,  opacity :'0'})
+        tempStyle = rightImg.style
+        Object.assign(rightImg.style, {transition : "all 0.5s ease" ,  opacity :'0'})
      }else{
-        tempStyle = document.querySelector('#leftImg').style
-        Object.assign(document.querySelector('#leftImg').style, {transition : "all 0.5s ease" ,  opacity : '0'})
+        tempStyle = leftImg.style
+        Object.assign(leftImg.style, {transition : "all 0.5s ease" ,  opacity : '0'})
      }
-     
 
+    _removeEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
+    _removeEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
     
-     
      roundIndex++
        
 
      //결승전시 다음 배틀 시작을 함수 종료
      if(isFinalRound){
         isfinished = true
+
+        if(selectObj === 'leftImg'){
+            Object.assign(leftImg.style, {transition : "all 0.5s ease" ,  opacity : '1'})
+        }else{
+            Object.assign(rightImg.style, {transition : "all 0.5s ease" ,  opacity :'1'})
+         }
+
         alert("우승 :"+roundResult[roundResult.length-1].result.name)
         //이벤트 삭제 메서드
         _end()
@@ -260,13 +271,15 @@ const _selectBettle = (e) =>{
     }
     setTimeout( () =>{
         if(selectObj === 'leftImg'){
-            document.querySelector('#rightImg').style =tempStyle
+            rightImg.style =tempStyle
         
          }else{
-            document.querySelector('#leftImg').style =tempStyle
+            leftImg.style =tempStyle
          }    
+        _addEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
+        _addEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
         _startBattle()
-    } , 1000)
+    } , 500)
 
     
 
