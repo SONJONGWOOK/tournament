@@ -1,47 +1,115 @@
-import {aaa} from './comic.js'
+import {onepiece} from './comic.js'
+import {bracketBuild} from '../../tree.js'
+import vs from '../img/vs1.png'
+import logo from '../img/oneicon.png'
+import {_shuffleArr , _addEventLinsten , _removeEventLinsten} from './util.js'
 
-console.log(aaa() )
 
 //전체 데이터
-let dataList = [ ]
-for(let i=0; i<50 ; i++){
-    dataList.push( {name : i , path : i})  
-}
+let dataList = onepiece()
+// for(let i=0; i<50 ; i++){
+//     dataList.push( {name : i , path : i})  
+// }
 let test = document.querySelector('#test')
+let img = document.querySelector('#img')
 //라운드변수
 let totalResult
 let roundResult
 let isFinalRound
 let isfinished
-let totalRound = 16
+let totalRound
+let roundInfo
  
 //대결변수
 let leftObj 
 let rightObj
-let leftEl = document.querySelector('#leftObj')
-let rightEl = document.querySelector('#rightObj')
+let leftImg 
+let rightImg
+let centerImg
+let leftEl 
+let rightEl
 let roundIndex 
+
 //대진표에 사용될 리스트
-let list = []
+let list
+
+//페이지 상단 준비
+const _pageStartUp = () =>{
+    let selectRound = document.querySelector('#roundSelect')
+    let startBtn = document.querySelector('#start')
+    let titleLogo = document.querySelector("#logo");        
+    let objOption = document.createElement("option");        
+    let totalItem = dataList.length
+    let minRound = 8
+    let maxRound = 0
+    //기본값 16강 
+    totalRound = 8
+    let i=1
+    
+    titleLogo.src = logo
+    titleLogo.style.width  = '2rem';
+    titleLogo.style.height  = '2.5rem';
+    
+    
+    while(maxRound < totalItem){
+        maxRound = Math.pow(2, i++)
+        if(minRound > maxRound) continue
+        objOption = document.createElement("option");
+        objOption.text = maxRound + "강"    
+        objOption.value = maxRound
+        selectRound.options.add(objOption)
+    }
+    _addEventLinsten( selectRound , 'change' , (e) =>{ 
+        totalRound =  e.target.value
+    })
+    _addEventLinsten(startBtn , 'click' , (e) =>{
+        if(isFinalRound == false && isfinished != true){
+            alert("아직 우승 안나옴")
+            return
+        }
+        _init()
+    })       
+
+}
+_pageStartUp()
 
 const _init = () =>{
+    leftImg = document.querySelector('#leftImg')
+    rightImg = document.querySelector('#rightImg')
+    centerImg = document.querySelector('#centerImg')
+    leftEl = document.querySelector('#leftObj')
+    rightEl = document.querySelector('#rightObj')
+    roundInfo = document.querySelector('#roundInfo')
     totalResult = new Array()
     isFinalRound = false
-
+    isfinished = false
     //데이터준비
     //기존 모든 데이터 배열을 섞어서 토너먼트 횟수에 따라 다른 배열로 이동
     _shuffleArr(dataList)
+    list = []
     dataList.some( (data , index) =>{
        list.push(data)
        return index >= (totalRound-1)
     })
     _preProcess() 
     //클릭 이벤트
-    _addEventLinsten(document.querySelector('#leftObj') , 'click' , _selectBettle )
-    _addEventLinsten(document.querySelector('#rightObj') , 'click' , _selectBettle )
+    _addEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
+    _addEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
+    _addEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
+    _addEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
     _addEventLinsten(document.querySelector('#back') , 'click' , _prevBettle )
-
+    centerImg.src = vs 
     _startBattle()
+    let main = document.querySelector('.wrapper')
+    main.style.display='flex'
+    
+}
+
+const _end = () =>{
+    bracketBuild(totalResult)
+    _removeEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
+    _removeEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
+    _removeEventLinsten(document.querySelector('#back') , 'click' , _prevBettle )
 }
 
 /*
@@ -68,37 +136,38 @@ const _preProcess = () =>{
 
 //다음 라운드 이동
 const _nextRound = () =>{
-
-    alert("다음라운드")
     
     list = roundResult.map( data =>{
         return data.result
-    })
-     
+    })     
     _preProcess()
+    
     _startBattle()        
 }
 
 //라운드 시작
 const _startBattle = () =>{
-    // console.log('시작' , roundIndex)
-    // console.log(roundResult)
+    
+   let roundCount =  parseInt(roundResult.length*2) 
+   roundInfo.innerHTML = roundCount === 2 ? '결승전 ' : roundCount+'강 '+(roundIndex+1)+"번째 라운드"
    if(roundResult.length == 1){
-        alert("결승전")
         isFinalRound = true
-   }  
+   }    
 
    if(roundIndex >= roundResult.length){
         _nextRound()
         return
    }
-   
    _nextBattle (roundResult[roundIndex].left   ,roundResult[roundIndex].right)
 }
 //배틀 상대 표시
 const _nextBattle = (leftIn , rightIn)=> {
     leftObj = leftIn
     rightObj = rightIn
+
+    leftImg.src = leftObj.path
+    rightImg.src = rightObj.path
+
     leftEl.innerHTML = leftObj.name
     rightEl.innerHTML = rightObj.name
 }
@@ -111,7 +180,7 @@ const _nextBattle = (leftIn , rightIn)=> {
 
 // 선택시 프로세스
 const _selectBettle = (e) =>{
-    
+      
     // console.log(e.target.id)
     e.stopPropagation()
     let selectObj = e.target.id;
@@ -119,7 +188,7 @@ const _selectBettle = (e) =>{
     roundResult[roundIndex] = {
         left : leftObj,
         right : rightObj,
-        result : selectObj === 'leftObj' ? leftObj : rightObj 
+        result : selectObj === 'leftImg' ? leftObj : rightObj 
      }
      
      roundIndex++
@@ -128,10 +197,10 @@ const _selectBettle = (e) =>{
      //결승전시 다음 배틀 시작을 함수 종료
      if(isFinalRound){
         isfinished = true
-        console.log(roundResult)
         alert("종료 우승 :"+roundResult[roundResult.length-1].result.name)
         //이벤트 삭제 메서드
-        return;
+        _end()
+        return
     }
 
     _startBattle()
@@ -143,7 +212,8 @@ const _prevBettle = (e) =>{
     e.stopPropagation()
     //우승시 더이상 뒤로가지 않게 하는 기능
     if(isfinished) {
-        alert("우승나옴")
+        alert("우승나옴 뒤로가기 못함")
+        return
     }
     
     roundIndex--
@@ -174,48 +244,7 @@ const _prevBettle = (e) =>{
 
 //대진표 뷰
 const _viewTree  = () =>{
-    
-    let str = ''
-    
-    totalResult.map( outer => {
-        outer.map( data =>{
-            let result = data.result !== undefined ? data.result.name : '결과없음'
-            str += (data.left.name + ' vs ' + data.right.name +' result ' + result + '   <br>' )
-        })
-    })
-    
-    
-    str = parseInt(roundResult.length*2)+'강  '+(roundIndex)+"번째 게임  "+leftObj.name + ' vs ' + rightObj.name+"<br>" + str
-    test.innerHTML = str
+   
+    // bracketBuild(totalResult)
+
 }
-
-/*
-    기타 함수들
-    이벤트 추가
-    배열랜덤 셔플
-*/
-
-//이벤트 리스너 추가
-const _addEventLinsten = (element , event , handler ) =>{
-    element.addEventListener(event , handler )
-}
-
-//배열 랜덤 셔플
-const _shuffleArr = (array) =>{
-    let currentIdx = array.length
-    let temp
-    let randomIdx
-    
-    while( 0 !== currentIdx ){
-        randomIdx = Math.floor(Math.random() * currentIdx)
-        currentIdx-=1
-        temp = array[currentIdx]
-        array[currentIdx] = array[randomIdx]
-        array[randomIdx] = temp
-    }
-
-    return array
-}
-
-//시작
-_init()

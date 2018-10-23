@@ -2,26 +2,44 @@
 <html>
    <meta charset="utf-8">
   <head> 
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="./src/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./tree.css">
   </head>
   <body>
-    <div id="main">
-    <h1>TORNMENT</h1>
-    <div><button id="back" >뒤로가기</button></div>
+    
+    <div id="header">
+      <div id=title><img id="logo">원피스 이상형 월드컵</div>
+      <div id=inputArea >
+        <select id="roundSelect">
+          <option value="" selected disabled>라운드 선택</option>
+          </select>
+          <button class="btn_rollover" id="start">시작</button>
+          <button class="btn_rollover" id="back" >뒤로가기</button>
+      </div>
+    </div>
+
+    <div id="roundInfo"></div>
+
       <div class="wrapper">
         <div class="content" id="left">
-          <span id="leftObj"></span>
+          <img id="leftImg" src="">
+          <span class=c1 id="leftObj"></span>
         </div>
+        <img id="centerImg" src=""> 
         <div class="content" id="right">
-            <span id="rightObj"></span>
+            <img id="rightImg" src="" >
+            <span class=c1 id="rightObj"></span>
         </div>
       </div>
 
-      <div id="test">
-
+      <div class="bracket">
+        <div class="bracket-left"></div>
+        <div class="bracket-center" id="winner"></div>
+        <div class="bracket-right"></div>
       </div>
-   </div>
-    <script src="./dist/js/bundle.js"></script>
+      </div>
+   
+    <script src="./dist/bundle.js"></script>
   </body>
 
   

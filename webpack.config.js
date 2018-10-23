@@ -4,7 +4,7 @@ module.exports = {
   entry: ['@babel/polyfill', './src/js/entry.js'],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist/js')
+    path: path.resolve(__dirname, 'dist/')
   },
   module: {
     rules: [{
@@ -20,7 +20,16 @@ module.exports = {
           presets: ['@babel/preset-env']
         }
       }
-    }]
+    },
+    {
+      test: /\.(ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+      loader: 'file-loader',
+      options: {
+        publicPath: './dist/' ,
+        name: '[path][hash].[ext]'
+      },
+    }
+    ]
   },
   devtool: 'source-map',
   mode: 'development'

@@ -1,0 +1,100 @@
+@font-face{
+	font-family: "SDSwagger";
+    src: url("../font/SDSwaggerTTF.woff") format('woff');
+}
+body{
+    font-family: 'SDSwagger';
+    background: white;
+    margin : 0 0 0 0;
+}
+
+.wrapper{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.content{
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    z-index : 10;
+}
+
+.c1{
+    font-size : 3rem;
+    width: 35rem;
+}
+.wrapper img { 
+    width: 35rem;
+    height: 40rem;
+}
+
+.btn_rollover {
+    
+    color: #000000;
+    border: #000000 solid 1px;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.btn_rollover:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#header{
+    background: white;
+    font-size:3rem;
+}
+#title{
+    margin-left: 5rem;
+}
+
+#inputArea {
+    margin-right: 5rem;
+    text-align: right;
+}
+
+#round{
+    text-align: center;
+    font-size : 3rem;
+}
+
+#roundInfo{
+    background: white;
+    text-align: center;
+    position: relative;
+    font-size : 3rem;
+    z-index: 20;
+    opacity: 0.7;
+    top:4rem;
+    margin-top: -2rem;
+}
+#roundSelect{
+    width: 7rem;
+    height: 3rem;
+}
+#roundSelect:hover {
+    cursor: pointer;
+}
+#left {
+    background: linear-gradient( to bottom, blue, white );
+}
+#right{
+    background: linear-gradient( to bottom, red, white );
+}
+
+#center{
+    min-width: 1%;
+}
+#centerImg{
+    position: absolute;
+    z-index: 30;
+    width: 25rem;
+    height: 30rem;
+}
+
