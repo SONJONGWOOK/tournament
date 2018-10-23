@@ -157,3 +157,47 @@ body{
     background-color: rgb(0, 0, 0);
     opacity: 0.6;   
 }
+
+@media all and (min-width: 768px) and (max-width: 1280px) {
+
+    .wrapper img { 
+        width: 25rem;
+        height: 30rem;
+    }
+
+    #centerImg{
+        width: 15rem;
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width:766px) {
+
+    .wrapper img { 
+        width: 15rem;
+        height: 20rem;
+    }
+
+    #centerImg{
+        width: 5rem;
+        height: 10rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+
+
+    
+    .wrapper img { 
+        width: 10rem;
+        height: 15rem;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    
+}
