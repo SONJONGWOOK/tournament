@@ -9685,6 +9685,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_vs1_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_vs1_png__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _img_oneicon_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/oneicon.png */ "./src/img/oneicon.png");
 /* harmony import */ var _img_oneicon_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_oneicon_png__WEBPACK_IMPORTED_MODULE_4__);
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
 /*
     이상형 월드컵
     comic.js 케릭터 데이터
@@ -9888,8 +9896,6 @@ var _nextRound = function _nextRound() {
 
 
 var _startBattle = function _startBattle() {
-  Object(_tree_js__WEBPACK_IMPORTED_MODULE_1__["_bracketBuild"])(totalResult);
-
   var roundCount = parseInt(roundResult.length * 2);
   roundInfo.innerHTML = roundCount === 2 ? '결승전 ' : roundCount + '강 ' + (roundIndex + 1) + "번째 라운드";
 
@@ -9902,6 +9908,8 @@ var _startBattle = function _startBattle() {
 
     return;
   }
+
+  Object(_tree_js__WEBPACK_IMPORTED_MODULE_1__["_bracketBuild"])(totalResult);
 
   _nextBattle(roundResult[roundIndex].left, roundResult[roundIndex].right);
 }; //배틀 상대 표시
@@ -9927,6 +9935,11 @@ var _selectBettle = function _selectBettle(e) {
   e.stopPropagation();
   var selectObj = e.target.id;
   roundResult[roundIndex] = {
+    left: leftObj,
+    right: rightObj,
+    result: selectObj === 'leftImg' ? leftObj : rightObj
+  };
+  preRoundResult[roundIndex] = {
     left: leftObj,
     right: rightObj,
     result: selectObj === 'leftImg' ? leftObj : rightObj
@@ -10011,10 +10024,10 @@ var _prevBettle = function _prevBettle(e) {
       totalResult.pop();
       pretotalResult.pop(); // 변경된 목록을 가져와서 중간에 버퍼 결과를 저장
 
-      roundResult = totalResult[totalResult.length - 1]; // roundResult = pretotalResult[pretotalResult.length-1] 
-
-      roundIndex = roundResult.length - 1; // _bracketBuild(pretotalResult)
-
+      totalResult = [];
+      totalResult = _toConsumableArray(pretotalResult);
+      roundResult = totalResult[totalResult.length - 1];
+      roundIndex = roundResult.length - 1;
       isFinalRound = false;
     }
   }

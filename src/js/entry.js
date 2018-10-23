@@ -170,9 +170,13 @@ const _end = () =>{
 //리스트 랜덤섞기 2개씩 묶어서 라운드 대진표 및 총 대진표 만들기
 const _preProcess = () =>{
 
+  
+
     _shuffleArr(list)
     preRoundResult = new Array()
     roundResult = new Array() 
+  
+
     for(let i=0; i<list.length ; i=i+2){
         roundResult.push({
             left : list[i],
@@ -186,12 +190,14 @@ const _preProcess = () =>{
     roundIndex = 0
     totalResult.push(roundResult)
     pretotalResult.push(preRoundResult)
+ 
 }
 
 //다음 라운드 이동
 const _nextRound = () =>{
     
     list = roundResult.map( data =>{
+      
         return data.result
     })     
     _preProcess()
@@ -203,19 +209,18 @@ const _nextRound = () =>{
 const _startBattle = () =>{
     
     
-    _bracketBuild(totalResult)
-    
-   let roundCount =  parseInt(roundResult.length*2) 
-   roundInfo.innerHTML = roundCount === 2 ? '결승전 ' : roundCount+'강 '+(roundIndex+1)+"번째 라운드"
-   if(roundResult.length == 1){
+    let roundCount =  parseInt(roundResult.length*2) 
+    roundInfo.innerHTML = roundCount === 2 ? '결승전 ' : roundCount+'강 '+(roundIndex+1)+"번째 라운드"
+    if(roundResult.length == 1){
         isFinalRound = true
-   }    
-
-   if(roundIndex >= roundResult.length){
+    }    
+    
+    if(roundIndex >= roundResult.length){
         _nextRound()
         return
-   }
-  
+    }
+    
+    _bracketBuild(totalResult)
    _nextBattle (roundResult[roundIndex].left   ,roundResult[roundIndex].right)
 }
 //배틀 상대 표시
@@ -248,6 +253,12 @@ const _selectBettle = (e) =>{
         right : rightObj,
         result : selectObj === 'leftImg' ? leftObj : rightObj 
     }
+    preRoundResult[roundIndex] = {
+        left : leftObj,
+        right : rightObj,
+        result : selectObj === 'leftImg' ? leftObj : rightObj 
+    }
+
      if(selectObj === 'leftImg'){
         tempStyle = rightImg.style
         Object.assign(rightImg.style, {transition : "all 0.5s ease" ,  opacity :'0'})
@@ -317,12 +328,18 @@ const _prevBettle = (e) =>{
             totalResult.pop()
             pretotalResult.pop()
             
+            
             // 변경된 목록을 가져와서 중간에 버퍼 결과를 저장
+            
+            totalResult = [] 
+            totalResult = [ ...pretotalResult ]
+            
+           
             roundResult = totalResult[totalResult.length-1]           
-            // roundResult = pretotalResult[pretotalResult.length-1] 
+            
             roundIndex=roundResult.length-1
             
-            // _bracketBuild(pretotalResult)
+            
             isFinalRound = false
         }
     }
