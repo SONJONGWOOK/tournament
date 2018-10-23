@@ -9717,8 +9717,11 @@ var roundIndex; //대진표에 사용될 리스트
 var list; //페이지 상단 준비
 
 var _pageStartUp = function _pageStartUp() {
+  var openModal = document.querySelector('.modalDialog');
   var selectRound = document.querySelector('#roundSelect');
   var startBtn = document.querySelector('#start');
+  var history = document.querySelector('#history');
+  var historyClose = document.querySelector('.close');
   var titleLogo = document.querySelector("#logo");
   var objOption = document.createElement("option");
   var totalItem = dataList.length;
@@ -9739,6 +9742,18 @@ var _pageStartUp = function _pageStartUp() {
     objOption.value = maxRound;
     selectRound.options.add(objOption);
   }
+
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_addEventLinsten"])(history, 'click', function (e) {
+    openModal.style.display = "block";
+    openModal.style.opacity = '1';
+  });
+
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_addEventLinsten"])(historyClose, 'click', function (e) {
+    openModal.style.display = "none";
+    openModal.style.opacity = '0';
+  });
+
+  historyClose;
 
   Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_addEventLinsten"])(selectRound, 'change', function (e) {
     totalRound = e.target.value;
@@ -9798,7 +9813,7 @@ var _init = function _init() {
 };
 
 var _end = function _end() {
-  Object(_tree_js__WEBPACK_IMPORTED_MODULE_1__["bracketBuild"])(totalResult);
+  Object(_tree_js__WEBPACK_IMPORTED_MODULE_1__["_bracketBuild"])(totalResult);
 
   Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_removeEventLinsten"])(document.querySelector('#leftImg'), 'click', _selectBettle);
 
@@ -9845,6 +9860,8 @@ var _nextRound = function _nextRound() {
 
 
 var _startBattle = function _startBattle() {
+  Object(_tree_js__WEBPACK_IMPORTED_MODULE_1__["_bracketBuild"])(totalResult);
+
   var roundCount = parseInt(roundResult.length * 2);
   roundInfo.innerHTML = roundCount === 2 ? '결승전 ' : roundCount + '강 ' + (roundIndex + 1) + "번째 라운드";
 
@@ -9887,10 +9904,7 @@ var _selectBettle = function _selectBettle(e) {
     right: rightObj,
     result: selectObj === 'leftImg' ? leftObj : rightObj
   };
-  roundIndex++;
-
-  _viewTree(); //결승전시 다음 배틀 시작을 함수 종료
-
+  roundIndex++; //결승전시 다음 배틀 시작을 함수 종료
 
   if (isFinalRound) {
     isfinished = true;
@@ -10701,12 +10715,12 @@ module.exports = "./dist/src/onepiece/eda97d48f71cac9c287ca5fe302081bb.jpg";
 /*!*****************!*\
   !*** ./tree.js ***!
   \*****************/
-/*! exports provided: bracketBuild, output */
+/*! exports provided: _bracketBuild, output */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bracketBuild", function() { return bracketBuild; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_bracketBuild", function() { return _bracketBuild; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "output", function() { return output; });
 
 let left = document.querySelector('.bracket-left')
@@ -10833,8 +10847,18 @@ const _buildName = (groupArr ,roundData , group) =>{
 
 
 
-const bracketBuild = (list) =>{
+const _bracketBuild = (list) =>{
     total = []
+    document.querySelector('#winner').innerHTML = " "
+    while ( left.hasChildNodes() ){
+        left.removeChild (left.firstChild)
+    }
+    while ( right.hasChildNodes() ){
+        right.removeChild (right.firstChild)
+    }
+
+
+
     // <div class="group">
     //                       <div class="group-team group-team-top">Team 1</div>
     //                       <div class="group-team group-team-divider"></div>
@@ -10870,7 +10894,8 @@ const bracketBuild = (list) =>{
                 
                 _lastBuildName(leftRound , false , data.left.name)
                 _lastBuildName(rightRound , true , data.right.name)
-                document.querySelector('#winner').innerHTML  = data.result.name
+                console.log(data)
+                document.querySelector('#winner').innerHTML  = data.result == undefined ? ''   :  data.result.name 
                 return
             }
 

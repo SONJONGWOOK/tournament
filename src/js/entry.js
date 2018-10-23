@@ -1,5 +1,5 @@
 import {onepiece} from './comic.js'
-import {bracketBuild} from '../../tree.js'
+import {_bracketBuild} from '../../tree.js'
 import vs from '../img/vs1.png'
 import logo from '../img/oneicon.png'
 import {_shuffleArr , _addEventLinsten , _removeEventLinsten} from './util.js'
@@ -35,10 +35,14 @@ let list
 
 //페이지 상단 준비
 const _pageStartUp = () =>{
+    let openModal = document.querySelector('.modalDialog')
     let selectRound = document.querySelector('#roundSelect')
     let startBtn = document.querySelector('#start')
+    let history = document.querySelector('#history')
+    let historyClose = document.querySelector('.close')
     let titleLogo = document.querySelector("#logo");        
     let objOption = document.createElement("option");        
+
     let totalItem = dataList.length
     let minRound = 8
     let maxRound = 0
@@ -59,6 +63,15 @@ const _pageStartUp = () =>{
         objOption.value = maxRound
         selectRound.options.add(objOption)
     }
+    _addEventLinsten( history , 'click' , (e) =>{
+        openModal.style.display = "block"
+        openModal.style.opacity = '1'       
+    })
+    _addEventLinsten( historyClose , 'click' , (e) =>{
+        openModal.style.display = "none"
+        openModal.style.opacity = '0'        
+    })
+    historyClose
     _addEventLinsten( selectRound , 'change' , (e) =>{ 
         totalRound =  e.target.value
     })
@@ -80,6 +93,7 @@ const _init = () =>{
     leftEl = document.querySelector('#leftObj')
     rightEl = document.querySelector('#rightObj')
     roundInfo = document.querySelector('#roundInfo')
+    
     totalResult = new Array()
     isFinalRound = false
     isfinished = false
@@ -106,7 +120,7 @@ const _init = () =>{
 }
 
 const _end = () =>{
-    bracketBuild(totalResult)
+    _bracketBuild(totalResult)
     _removeEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
     _removeEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
     _removeEventLinsten(document.querySelector('#back') , 'click' , _prevBettle )
@@ -132,6 +146,7 @@ const _preProcess = () =>{
     }
     roundIndex = 0
     totalResult.push(roundResult)
+    
 }
 
 //다음 라운드 이동
@@ -147,6 +162,8 @@ const _nextRound = () =>{
 
 //라운드 시작
 const _startBattle = () =>{
+    
+    _bracketBuild(totalResult)
     
    let roundCount =  parseInt(roundResult.length*2) 
    roundInfo.innerHTML = roundCount === 2 ? '결승전 ' : roundCount+'강 '+(roundIndex+1)+"번째 라운드"
@@ -192,7 +209,7 @@ const _selectBettle = (e) =>{
      }
      
      roundIndex++
-     _viewTree()
+       
 
      //결승전시 다음 배틀 시작을 함수 종료
      if(isFinalRound){

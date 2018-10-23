@@ -123,8 +123,18 @@ const _buildName = (groupArr ,roundData , group) =>{
 
 
 
-const bracketBuild = (list) =>{
+const _bracketBuild = (list) =>{
     total = []
+    document.querySelector('#winner').innerHTML = " "
+    while ( left.hasChildNodes() ){
+        left.removeChild (left.firstChild)
+    }
+    while ( right.hasChildNodes() ){
+        right.removeChild (right.firstChild)
+    }
+
+
+
     // <div class="group">
     //                       <div class="group-team group-team-top">Team 1</div>
     //                       <div class="group-team group-team-divider"></div>
@@ -160,7 +170,8 @@ const bracketBuild = (list) =>{
                 
                 _lastBuildName(leftRound , false , data.left.name)
                 _lastBuildName(rightRound , true , data.right.name)
-                document.querySelector('#winner').innerHTML  = data.result.name
+                console.log(data)
+                document.querySelector('#winner').innerHTML  = data.result == undefined ? ''   :  data.result.name 
                 return
             }
 
@@ -189,7 +200,7 @@ const bracketBuild = (list) =>{
     
     
 }
-export {bracketBuild}
+export {_bracketBuild}
 export {output}
 
 
