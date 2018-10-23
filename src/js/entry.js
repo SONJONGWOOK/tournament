@@ -1,15 +1,20 @@
+/*
+    이상형 월드컵
+    comic.js 케릭터 데이터
+    tree.js 대진표 모듈
+    util.js 유틸리티
+*/
+
 import {onepiece} from './comic.js'
-import {_bracketBuild} from '../../tree.js'
+import {_bracketBuild} from './tree.js'
+import {_shuffleArr , _addEventLinsten , _removeEventLinsten} from './util.js'
 import vs from '../img/vs1.png'
 import logo from '../img/oneicon.png'
-import {_shuffleArr , _addEventLinsten , _removeEventLinsten} from './util.js'
 
 
-//전체 데이터
+//전체 데이터 - 이상형 종류 선택 현재 1개
 let dataList = onepiece()
-// for(let i=0; i<50 ; i++){
-//     dataList.push( {name : i , path : i})  
-// }
+
 let test = document.querySelector('#test')
 let img = document.querySelector('#img')
 //라운드변수
@@ -40,21 +45,23 @@ const _pageStartUp = () =>{
     let startBtn = document.querySelector('#start')
     let history = document.querySelector('#history')
     let historyClose = document.querySelector('.close')
-    let titleLogo = document.querySelector("#logo");        
-    let objOption = document.createElement("option");        
+    let titleLogo = document.querySelector("#logo") 
+    let blockOverlay = document.querySelector('.blockOverlay')       
+    let objOption = document.createElement("option")        
 
     let totalItem = dataList.length
+    //최소라운드
     let minRound = 8
     let maxRound = 0
     //기본값 16강 
-    totalRound = 8
+    totalRound = 16
     let i=1
     
     titleLogo.src = logo
     titleLogo.style.width  = '2rem';
     titleLogo.style.height  = '2.5rem';
     
-    
+    //최대라운드는 아이템 요소의 갯수를 판별하여 결정
     while(maxRound < totalItem){
         maxRound = Math.pow(2, i++)
         if(minRound > maxRound) continue
@@ -63,29 +70,45 @@ const _pageStartUp = () =>{
         objOption.value = maxRound
         selectRound.options.add(objOption)
     }
+    //히스토리 view
     _addEventLinsten( history , 'click' , (e) =>{
-        openModal.style.display = "block"
-        openModal.style.opacity = '1'       
+
+        if(openModal.style.display == "block" ){
+            openModal.style.display = "none"
+            blockOverlay.style.display='none'
+        }else{
+            openModal.style.display = "block"
+            blockOverlay.style.display='block'
+        }
+             
     })
     _addEventLinsten( historyClose , 'click' , (e) =>{
-        openModal.style.display = "none"
-        openModal.style.opacity = '0'        
+       
+        blockOverlay.style.display='none'
+        openModal.style.display = 'none'
     })
-    historyClose
+    
+    //셀렉트박스값 변경
     _addEventLinsten( selectRound , 'change' , (e) =>{ 
         totalRound =  e.target.value
     })
+    //시작
     _addEventLinsten(startBtn , 'click' , (e) =>{
+        
         if(isFinalRound == false && isfinished != true){
-            alert("아직 우승 안나옴")
+            alert("아직 게임이 종료되지않았습니다. ")
             return
+        }
+
+        if( selectRound.value == undefined ||  selectRound.value == '') {
+            alert("라운드 미선택시 "+totalRound +'강 으로 시작 합니다.')
         }
         _init()
     })       
 
 }
-_pageStartUp()
 
+//게임 초기 설정
 const _init = () =>{
     leftImg = document.querySelector('#leftImg')
     rightImg = document.querySelector('#rightImg')
@@ -106,6 +129,7 @@ const _init = () =>{
        return index >= (totalRound-1)
     })
     _preProcess() 
+
     //클릭 이벤트
     _addEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
     _addEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
@@ -214,7 +238,7 @@ const _selectBettle = (e) =>{
      //결승전시 다음 배틀 시작을 함수 종료
      if(isFinalRound){
         isfinished = true
-        alert("종료 우승 :"+roundResult[roundResult.length-1].result.name)
+        alert("우승 :"+roundResult[roundResult.length-1].result.name)
         //이벤트 삭제 메서드
         _end()
         return
@@ -229,7 +253,7 @@ const _prevBettle = (e) =>{
     e.stopPropagation()
     //우승시 더이상 뒤로가지 않게 하는 기능
     if(isfinished) {
-        alert("우승나옴 뒤로가기 못함")
+        alert("우승자가 나왔기에 뒤로 가지 못합니다.")
         return
     }
     
@@ -240,7 +264,7 @@ const _prevBettle = (e) =>{
         roundIndex=0
         
         if(totalResult.length <= 1){
-            alert("하나라도 선택해야함")
+            alert("하나라도 선택 해야 합니다.")
             return
         }else{
             
@@ -258,10 +282,4 @@ const _prevBettle = (e) =>{
     _startBattle()
 }
 
-
-//대진표 뷰
-const _viewTree  = () =>{
-   
-    // bracketBuild(totalResult)
-
-}
+_pageStartUp()

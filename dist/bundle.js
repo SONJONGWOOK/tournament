@@ -9679,22 +9679,25 @@ var onepiece = function onepiece() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _comic_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./comic.js */ "./src/js/comic.js");
-/* harmony import */ var _tree_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tree.js */ "./tree.js");
-/* harmony import */ var _img_vs1_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/vs1.png */ "./src/img/vs1.png");
-/* harmony import */ var _img_vs1_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_vs1_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _img_oneicon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/oneicon.png */ "./src/img/oneicon.png");
-/* harmony import */ var _img_oneicon_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_oneicon_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./util.js */ "./src/js/util.js");
+/* harmony import */ var _tree_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tree.js */ "./src/js/tree.js");
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./util.js */ "./src/js/util.js");
+/* harmony import */ var _img_vs1_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/vs1.png */ "./src/img/vs1.png");
+/* harmony import */ var _img_vs1_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_vs1_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _img_oneicon_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/oneicon.png */ "./src/img/oneicon.png");
+/* harmony import */ var _img_oneicon_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_oneicon_png__WEBPACK_IMPORTED_MODULE_4__);
+/*
+    이상형 월드컵
+    comic.js 케릭터 데이터
+    tree.js 대진표 모듈
+    util.js 유틸리티
+*/
 
 
 
 
- //전체 데이터
+ //전체 데이터 - 이상형 종류 선택 현재 1개
 
-var dataList = Object(_comic_js__WEBPACK_IMPORTED_MODULE_0__["onepiece"])(); // for(let i=0; i<50 ; i++){
-//     dataList.push( {name : i , path : i})  
-// }
-
+var dataList = Object(_comic_js__WEBPACK_IMPORTED_MODULE_0__["onepiece"])();
 var test = document.querySelector('#test');
 var img = document.querySelector('#img'); //라운드변수
 
@@ -9723,16 +9726,18 @@ var _pageStartUp = function _pageStartUp() {
   var history = document.querySelector('#history');
   var historyClose = document.querySelector('.close');
   var titleLogo = document.querySelector("#logo");
+  var blockOverlay = document.querySelector('.blockOverlay');
   var objOption = document.createElement("option");
-  var totalItem = dataList.length;
+  var totalItem = dataList.length; //최소라운드
+
   var minRound = 8;
   var maxRound = 0; //기본값 16강 
 
-  totalRound = 8;
+  totalRound = 16;
   var i = 1;
-  titleLogo.src = _img_oneicon_png__WEBPACK_IMPORTED_MODULE_3___default.a;
+  titleLogo.src = _img_oneicon_png__WEBPACK_IMPORTED_MODULE_4___default.a;
   titleLogo.style.width = '2rem';
-  titleLogo.style.height = '2.5rem';
+  titleLogo.style.height = '2.5rem'; //최대라운드는 아이템 요소의 갯수를 판별하여 결정
 
   while (maxRound < totalItem) {
     maxRound = Math.pow(2, i++);
@@ -9741,35 +9746,44 @@ var _pageStartUp = function _pageStartUp() {
     objOption.text = maxRound + "강";
     objOption.value = maxRound;
     selectRound.options.add(objOption);
-  }
+  } //히스토리 view
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_addEventLinsten"])(history, 'click', function (e) {
-    openModal.style.display = "block";
-    openModal.style.opacity = '1';
+
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(history, 'click', function (e) {
+    if (openModal.style.display == "block") {
+      openModal.style.display = "none";
+      blockOverlay.style.display = 'none';
+    } else {
+      openModal.style.display = "block";
+      blockOverlay.style.display = 'block';
+    }
   });
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_addEventLinsten"])(historyClose, 'click', function (e) {
-    openModal.style.display = "none";
-    openModal.style.opacity = '0';
-  });
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(historyClose, 'click', function (e) {
+    blockOverlay.style.display = 'none';
+    openModal.style.display = 'none';
+  }); //셀렉트박스값 변경
 
-  historyClose;
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_addEventLinsten"])(selectRound, 'change', function (e) {
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(selectRound, 'change', function (e) {
     totalRound = e.target.value;
-  });
+  }); //시작
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_addEventLinsten"])(startBtn, 'click', function (e) {
+
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(startBtn, 'click', function (e) {
     if (isFinalRound == false && isfinished != true) {
-      alert("아직 우승 안나옴");
+      alert("아직 게임이 종료되지않았습니다. ");
       return;
+    }
+
+    if (selectRound.value == undefined || selectRound.value == '') {
+      alert("라운드 미선택시 " + totalRound + '강 으로 시작 합니다.');
     }
 
     _init();
   });
-};
+}; //게임 초기 설정
 
-_pageStartUp();
 
 var _init = function _init() {
   leftImg = document.querySelector('#leftImg');
@@ -9783,7 +9797,7 @@ var _init = function _init() {
   isfinished = false; //데이터준비
   //기존 모든 데이터 배열을 섞어서 토너먼트 횟수에 따라 다른 배열로 이동
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_shuffleArr"])(dataList);
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_shuffleArr"])(dataList);
 
   list = [];
   dataList.some(function (data, index) {
@@ -9794,17 +9808,17 @@ var _init = function _init() {
   _preProcess(); //클릭 이벤트
 
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_addEventLinsten"])(document.querySelector('#leftImg'), 'click', _selectBettle);
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#leftImg'), 'click', _selectBettle);
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_addEventLinsten"])(document.querySelector('#rightImg'), 'click', _selectBettle);
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#rightImg'), 'click', _selectBettle);
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_addEventLinsten"])(document.querySelector('#leftImg'), 'click', _selectBettle);
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#leftImg'), 'click', _selectBettle);
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_addEventLinsten"])(document.querySelector('#rightImg'), 'click', _selectBettle);
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#rightImg'), 'click', _selectBettle);
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_addEventLinsten"])(document.querySelector('#back'), 'click', _prevBettle);
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#back'), 'click', _prevBettle);
 
-  centerImg.src = _img_vs1_png__WEBPACK_IMPORTED_MODULE_2___default.a;
+  centerImg.src = _img_vs1_png__WEBPACK_IMPORTED_MODULE_3___default.a;
 
   _startBattle();
 
@@ -9815,11 +9829,11 @@ var _init = function _init() {
 var _end = function _end() {
   Object(_tree_js__WEBPACK_IMPORTED_MODULE_1__["_bracketBuild"])(totalResult);
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_removeEventLinsten"])(document.querySelector('#leftImg'), 'click', _selectBettle);
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_removeEventLinsten"])(document.querySelector('#leftImg'), 'click', _selectBettle);
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_removeEventLinsten"])(document.querySelector('#rightImg'), 'click', _selectBettle);
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_removeEventLinsten"])(document.querySelector('#rightImg'), 'click', _selectBettle);
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_removeEventLinsten"])(document.querySelector('#back'), 'click', _prevBettle);
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_removeEventLinsten"])(document.querySelector('#back'), 'click', _prevBettle);
 };
 /*
     대진표 및 라운드 관련 함수
@@ -9832,7 +9846,7 @@ var _end = function _end() {
 
 
 var _preProcess = function _preProcess() {
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["_shuffleArr"])(list);
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_shuffleArr"])(list);
 
   roundResult = new Array();
 
@@ -9908,7 +9922,7 @@ var _selectBettle = function _selectBettle(e) {
 
   if (isFinalRound) {
     isfinished = true;
-    alert("종료 우승 :" + roundResult[roundResult.length - 1].result.name); //이벤트 삭제 메서드
+    alert("우승 :" + roundResult[roundResult.length - 1].result.name); //이벤트 삭제 메서드
 
     _end();
 
@@ -9923,7 +9937,7 @@ var _prevBettle = function _prevBettle(e) {
   e.stopPropagation(); //우승시 더이상 뒤로가지 않게 하는 기능
 
   if (isfinished) {
-    alert("우승나옴 뒤로가기 못함");
+    alert("우승자가 나왔기에 뒤로 가지 못합니다.");
     return;
   }
 
@@ -9933,7 +9947,7 @@ var _prevBettle = function _prevBettle(e) {
     roundIndex = 0;
 
     if (totalResult.length <= 1) {
-      alert("하나라도 선택해야함");
+      alert("하나라도 선택 해야 합니다.");
       return;
     } else {
       //넘어가기전에 마지막 배열삭제
@@ -9950,11 +9964,187 @@ var _prevBettle = function _prevBettle(e) {
   };
 
   _startBattle();
-}; //대진표 뷰
-
-
-var _viewTree = function _viewTree() {// bracketBuild(totalResult)
 };
+
+_pageStartUp();
+
+/***/ }),
+
+/***/ "./src/js/tree.js":
+/*!************************!*\
+  !*** ./src/js/tree.js ***!
+  \************************/
+/*! exports provided: _bracketBuild, output */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_bracketBuild", function() { return _bracketBuild; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "output", function() { return output; });
+/*
+    트리 대진표 작성
+*/
+var left = document.querySelector('.bracket-left');
+var right = document.querySelector('.bracket-right');
+var total;
+/*
+* 엘리먼트 생성
+* 마지막 엘리먼트 생성
+*/
+//엘리먼트 생성
+
+var _buildEl = function _buildEl(addEl, isRight) {
+  var className = '';
+
+  if (isRight) {
+    className = '-right';
+  }
+
+  var groupTop = document.createElement("div");
+  var groupDivider = document.createElement("div");
+  var groupBottom = document.createElement("div");
+  groupTop.classList.add('group-team', 'group-team-top' + className);
+  groupDivider.classList.add('group-team', 'group-team-divider' + className);
+  groupBottom.classList.add('group-team', 'group-team-bottom' + className);
+  addEl.appendChild(groupTop);
+  addEl.appendChild(groupDivider);
+  addEl.appendChild(groupBottom);
+}; //마지막 엘리먼트는 1개 엘리먼트 
+
+
+var _lastBuildName = function _lastBuildName(groupArr, isRight, name) {
+  var group = document.createElement("div");
+  group.classList.add('group');
+  var addGroup = group.cloneNode(true);
+  var className = '';
+
+  if (isRight) {
+    className = '-right';
+  }
+
+  var groupTop = document.createElement("div");
+  groupTop.classList.add('group-team', 'group-team-top' + className);
+  groupTop.innerHTML = name;
+  addGroup.appendChild(groupTop);
+  groupArr.appendChild(addGroup);
+};
+/*
+    대진표가 라운드 올라가면서 랜덤으로 변경
+    변경된 대진표를 상위부터 내려가면서 리스트 생성
+    L,R 형태를 맞춰서 리스트 생성
+*/
+
+
+var _fixedList = function _fixedList(list) {
+  var listsize = list.length - 1;
+  var fixList = [];
+  var last = list[listsize];
+  fixList.push(last);
+
+  var _loop = function _loop(i) {
+    var dData = [];
+    var preRound = list[i - 1];
+    var arr = [preRound.length];
+    var k = 0;
+    var j = 0;
+    list[i].map(function (data) {
+      dData.push(data.left.name);
+      dData.push(data.right.name);
+    }); //상위 라운드의 데이터와 하위 라운드의 데이터를 비교한다.
+
+    while (true) {
+      if (dData[k] == preRound[j].left.name || dData[k] == preRound[j].right.name) {
+        arr[k] = preRound[j];
+        k++;
+      }
+
+      j++;
+      if (j >= preRound.length) j = 0;
+
+      if (k >= dData.length) {
+        //데이터 변경하고 교체
+        list[i - 1] = arr.concat();
+        break;
+      }
+    }
+
+    fixList.unshift(arr);
+  };
+
+  for (var i = listsize; i > 0; i--) {
+    _loop(i);
+  }
+
+  total = fixList;
+}; //엘리먼트에 대전 상대 이름 넣기
+
+
+var _buildName = function _buildName(groupArr, roundData, group) {
+  var addGroup = group.cloneNode(true);
+  addGroup.childNodes[0].innerHTML = roundData.left.name;
+  addGroup.childNodes[2].innerHTML = roundData.right.name; //승자노드 생성
+
+  console.log(addGroup.childNodes);
+
+  if (roundData.result != undefined && roundData.left.name == roundData.result.name) {}
+
+  groupArr.appendChild(addGroup);
+};
+
+var _bracketBuild = function _bracketBuild(list) {
+  total = [];
+  document.querySelector('#winner').innerHTML = " "; //라운드 올라갈때마다 엘리먼트 하위 노드 초기화
+
+  while (left.hasChildNodes()) {
+    left.removeChild(left.firstChild);
+  }
+
+  while (right.hasChildNodes()) {
+    right.removeChild(right.firstChild);
+  } //좌우 그룹 따로 생성
+
+
+  var groupLeft = document.createElement("div");
+  groupLeft.classList.add('group');
+  var groupRight = document.createElement("div");
+  groupRight.classList.add('group');
+
+  _buildEl(groupLeft, false);
+
+  _buildEl(groupRight, true);
+
+  _fixedList(list);
+
+  total.map(function (inner, index) {
+    var leftRound = document.createElement("div");
+    var rightRound = document.createElement("div");
+    leftRound.classList.add('round');
+    rightRound.classList.add('round');
+    inner.map(function (data, index) {
+      //대전은 1쌍씩 하다 마지막 라운드는 1번의 대전이기때문에 이때 결승관련된 엘리먼트를 생성
+      if (inner.length == 1) {
+        _lastBuildName(leftRound, false, data.left.name);
+
+        _lastBuildName(rightRound, true, data.right.name);
+
+        document.querySelector('#winner').innerHTML = data.result == undefined ? '' : data.result.name;
+        return;
+      } //L R 반씩
+
+
+      if (index < inner.length / 2) {
+        _buildName(leftRound, data, groupLeft);
+      } else {
+        _buildName(rightRound, data, groupRight);
+      }
+    });
+    left.appendChild(leftRound);
+    right.appendChild(rightRound);
+  });
+};
+
+
+
 
 /***/ }),
 
@@ -10708,227 +10898,6 @@ module.exports = "./dist/src/onepiece/a2f27082448d8f6c7540722874e5fb06.jpg";
 /***/ (function(module, exports) {
 
 module.exports = "./dist/src/onepiece/eda97d48f71cac9c287ca5fe302081bb.jpg";
-
-/***/ }),
-
-/***/ "./tree.js":
-/*!*****************!*\
-  !*** ./tree.js ***!
-  \*****************/
-/*! exports provided: _bracketBuild, output */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_bracketBuild", function() { return _bracketBuild; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "output", function() { return output; });
-
-let left = document.querySelector('.bracket-left')
-let right = document.querySelector('.bracket-right')
-let total 
-
-const _output  = () => {
-            
-    let bracket = document.querySelector('#bracket')
-    let leftBracket = document.querySelector('.bracket-left')
-    let rightBracket = document.querySelector('.bracket-right')
-    
-    left.map( node =>{
-        leftBracket.appendChild(node)
-    })
-
-    right.map( node =>{
-        rightBracket.appendChild(node)
-    })
-
-    console.log(bracket)
-    
-    
-}
-
-const _buildEl = (addEl , isRight) =>{
-    let className =''
-    if(isRight){
-        className = '-right'
-    }
-    let groupTop = document.createElement("div")
-    let groupDivider = document.createElement("div")
-    let groupBottom = document.createElement("div")
-    groupTop.classList.add('group-team' , 'group-team-top'+className)
-    groupDivider.classList.add('group-team' , 'group-team-divider'+className)
-    groupBottom.classList.add('group-team' , 'group-team-bottom'+className)
-
-    addEl.appendChild(groupTop)
-    addEl.appendChild(groupDivider)
-    addEl.appendChild(groupBottom)
-}
-
-const _lastBuildName = (groupArr , isRight , name) =>{
-    
-    let group =document.createElement("div")
-    group.classList.add('group')
-    let addGroup = group.cloneNode(true)
-
-    let className =''
-    if(isRight){
-        className = '-right'
-        
-    }
-    let groupTop = document.createElement("div")
-    groupTop.classList.add('group-team' , 'group-team-top'+className)
-    groupTop.innerHTML = name
-    addGroup.appendChild(groupTop)
-    groupArr.appendChild(addGroup)
-}
-
-const _fixedList = (list) =>{
-    let listsize = list.length-1
-    let fixList = []
-    let last =list[listsize]
-    fixList.push(last)   
-     
-    for(let i= listsize ; i>0 ; i--){
-        let dData  = []
-        let preRound = list[i-1]
-        let arr = [preRound.length]
-        console.log('arr 길이' , arr.length)
-        let k=0
-        let j=0
-        list[i].map( data =>{
-            dData.push(data.left.name)
-            dData.push(data.right.name)
-        })     
-        while(true){
-            if(dData[k] == preRound[j].left.name || dData[k] == preRound[j].right.name){
-                //이부분 
-                
-                // console.log(dData[k] , preRound[j].left.name , preRound[j].right.name)
-                // arr.push(preRound[j])
-                arr[k] = preRound[j]
-                
-                k++
-            }
-
-            j++
-            if(j >= preRound.length) j=0    
-            if(k>=dData.length){
-                // preRound = []
-                list[i-1] = [...arr]
-                console.log('교체' , arr)
-                console.log(list)
-                break;
-            }
-
-        }
-
-        fixList.unshift(arr)
-    }
-    console.log(fixList)
-    total=fixList
-}
-
-
-const _buildName = (groupArr ,roundData , group) =>{
-   
-    let addGroup =group.cloneNode(true)
-  
-    addGroup.childNodes[0].innerHTML = roundData.left.name
-    addGroup.childNodes[2].innerHTML = roundData.right.name
- 
-    // groupArr[groupArr.length-1].childNodes[0].innerHTML = roundData.left.name
-    // groupArr[groupArr.length-1].childNodes[2].innerHTML = roundData.right.name
-    
-    // let round =document.createElement("div")
-    // round.classList.add('round')
-    // round.appendChild(addGroup)
-        
-    groupArr.appendChild(addGroup)
-}
-
-
-
-const _bracketBuild = (list) =>{
-    total = []
-    document.querySelector('#winner').innerHTML = " "
-    while ( left.hasChildNodes() ){
-        left.removeChild (left.firstChild)
-    }
-    while ( right.hasChildNodes() ){
-        right.removeChild (right.firstChild)
-    }
-
-
-
-    // <div class="group">
-    //                       <div class="group-team group-team-top">Team 1</div>
-    //                       <div class="group-team group-team-divider"></div>
-    //                       <div class="group-team group-team-bottom">Team 2</div>
-    //                     </div>
-
-    // objOption = document.createElement("option");
-    // objOption.text = maxRound + "강"    
-    // objOption.value = maxRound
-    // selectRound.options.add(objOption)
-      
-    let groupLeft = document.createElement("div")
-    groupLeft.classList.add('group')
-    let groupRight = document.createElement("div")
-    groupRight.classList.add('group')
-    //group left vs rigth 1개
- 
-
-    _buildEl(groupLeft , false)
-    _buildEl(groupRight , true)
-    _fixedList(list)
-     
-    total.map( (inner , index) =>{
-        let leftRound =document.createElement("div")
-        let rightRound =document.createElement("div")
-        leftRound.classList.add('round')
-        rightRound.classList.add('round')
-   
-
-        inner.map ( (data , index)  =>{
-            
-            if(inner.length == 1){
-                
-                _lastBuildName(leftRound , false , data.left.name)
-                _lastBuildName(rightRound , true , data.right.name)
-                console.log(data)
-                document.querySelector('#winner').innerHTML  = data.result == undefined ? ''   :  data.result.name 
-                return
-            }
-
-            // _buildName(leftRound, data, groupLeft)
-
-            if( index < inner.length / 2 ){
-                _buildName(leftRound, data, groupLeft)
-            }else{
-                _buildName(rightRound, data, groupRight)
-            }       
-        })
-
-        
-         left.appendChild(leftRound)       
-         right.appendChild(rightRound)
-
-    })
-    
-  
-
-
-    // console.log(left)
-    // console.log(right)
-
-    // _output()
-    
-    
-}
-
-
-
-
-
 
 /***/ }),
 
