@@ -19,7 +19,9 @@ let test = document.querySelector('#test')
 let img = document.querySelector('#img')
 //라운드변수
 let totalResult
+let pretotalResult
 let roundResult
+let preRoundResult
 let isFinalRound
 let isfinished
 let totalRound
@@ -124,6 +126,7 @@ const _init = () =>{
     }
             
     totalResult = new Array()
+    pretotalResult = new Array()
     isFinalRound = false
     isfinished = false
     //데이터준비
@@ -168,16 +171,21 @@ const _end = () =>{
 const _preProcess = () =>{
 
     _shuffleArr(list)
+    preRoundResult = new Array()
     roundResult = new Array() 
     for(let i=0; i<list.length ; i=i+2){
         roundResult.push({
             left : list[i],
             right : list[i+1]
         })
+        preRoundResult.push({
+            left : list[i],
+            right : list[i+1]
+        })
     }
     roundIndex = 0
     totalResult.push(roundResult)
-    
+    pretotalResult.push(preRoundResult)
 }
 
 //다음 라운드 이동
@@ -298,16 +306,20 @@ const _prevBettle = (e) =>{
     
 
     if(roundIndex < 0){
+
         roundIndex=0
         
         if(totalResult.length <= 1){
             alert("하나라도 선택 해야 합니다.")
             return
-        }else{
-            
+        }else{    
             //넘어가기전에 마지막 배열삭제
             totalResult.pop()
-            roundResult = totalResult[totalResult.length-1]           
+            pretotalResult.pop()
+            
+            // 변경된 목록을 가져와서 중간에 버퍼 결과를 저장
+            // roundResult = totalResult[totalResult.length-1]           
+            roundResult = pretotalResult[pretotalResult.length-1] 
             roundIndex=roundResult.length-1
             isFinalRound = false
         }

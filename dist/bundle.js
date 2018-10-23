@@ -9702,7 +9702,9 @@ var test = document.querySelector('#test');
 var img = document.querySelector('#img'); //라운드변수
 
 var totalResult;
+var pretotalResult;
 var roundResult;
+var preRoundResult;
 var isFinalRound;
 var isfinished;
 var totalRound;
@@ -9800,6 +9802,7 @@ var _init = function _init() {
   }
 
   totalResult = new Array();
+  pretotalResult = new Array();
   isFinalRound = false;
   isfinished = false; //데이터준비
   //기존 모든 데이터 배열을 섞어서 토너먼트 횟수에 따라 다른 배열로 이동
@@ -9853,6 +9856,7 @@ var _end = function _end() {
 var _preProcess = function _preProcess() {
   Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_shuffleArr"])(list);
 
+  preRoundResult = new Array();
   roundResult = new Array();
 
   for (var i = 0; i < list.length; i = i + 2) {
@@ -9860,10 +9864,15 @@ var _preProcess = function _preProcess() {
       left: list[i],
       right: list[i + 1]
     });
+    preRoundResult.push({
+      left: list[i],
+      right: list[i + 1]
+    });
   }
 
   roundIndex = 0;
   totalResult.push(roundResult);
+  pretotalResult.push(preRoundResult);
 }; //다음 라운드 이동
 
 
@@ -10000,7 +10009,10 @@ var _prevBettle = function _prevBettle(e) {
     } else {
       //넘어가기전에 마지막 배열삭제
       totalResult.pop();
-      roundResult = totalResult[totalResult.length - 1];
+      pretotalResult.pop(); // 변경된 목록을 가져와서 중간에 버퍼 결과를 저장
+      // roundResult = totalResult[totalResult.length-1]           
+
+      roundResult = pretotalResult[pretotalResult.length - 1];
       roundIndex = roundResult.length - 1;
       isFinalRound = false;
     }

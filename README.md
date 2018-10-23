@@ -15,5 +15,25 @@
 #### ○ 우승자와 히스토리를 확인할 수 있어야함
 ##### - 히스토리는 트리형태로 구성.
 
-## 초기 컨셉 만화케릭터 월드컵
+## 초기 컨셉 
 ### 만화케릭터 64개를 놓고 무작위 64강부터 8강까지 선택할 수 있게 함.
+### 라운드 선택 기능
+### 히스토리 기능
+### 뒤로가기 기능
+
+## lang
+### HTML , CSS
+### Javascript
+
+## stack
+### webpack , fileloader
+### babel , bable-poyfill
+
+## file
+### index.html , /dist/css/index.css , /dist/css/tree.css , /dist/font/SDSwaggerTTF.woff
+### /src/js/entry.js , /src/js/comic.js , /src/js/tree.js , /src/js/utile.js , /dist/bundel.js 
+### img - /dist/src/img ... 
+
+
+
+
