@@ -41,9 +41,12 @@ const _lastBuildName = (groupArr , isRight , name) =>{
         className = '-right'
         
     }
+
     let groupTop = document.createElement("div")
     groupTop.classList.add('group-team' , 'group-team-top'+className)
     groupTop.innerHTML = name
+
+
     addGroup.appendChild(groupTop)
     groupArr.appendChild(addGroup)
 }
@@ -100,10 +103,13 @@ const _buildName = (groupArr ,roundData , group) =>{
     addGroup.childNodes[0].innerHTML = roundData.left.name
     addGroup.childNodes[2].innerHTML = roundData.right.name       
     
-    //승자노드 생성
-    console.log(addGroup.childNodes)
-    
-    if(roundData.result != undefined && roundData.left.name == roundData.result.name){
+    //승자컬러변경
+    if(roundData.result != undefined ){
+        if(roundData.left.name == roundData.result.name){
+            addGroup.childNodes[0].style.color   = "blue";
+        }else{
+            addGroup.childNodes[2].style.color  = "red";
+        }
     }
 
 
@@ -147,7 +153,11 @@ const _bracketBuild = (list) =>{
             if(inner.length == 1){
                 _lastBuildName(leftRound , false , data.left.name)
                 _lastBuildName(rightRound , true , data.right.name)
-                document.querySelector('#winner').innerHTML  = data.result == undefined ? ''   :  data.result.name 
+                if(data.result != undefined){
+                    document.querySelector('#winner').innerHTML  = data.result.name 
+                    data.result.name == data.left.name  ? document.querySelector('#winner').style.color="blue" : document.querySelector('#winner').style.color="red" 
+                }
+
                 return
             }
 

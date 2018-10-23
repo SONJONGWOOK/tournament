@@ -35,7 +35,19 @@ body{
 .wrapper img { 
     width: 35rem;
     height: 40rem;
+
 }
+#leftImg ,#rightImg { 
+    opacity: 0.5
+}
+#leftImg:hover,#rightImg:hover { 
+    opacity: 1
+}
+.selectImg {
+    opacity : 0;
+    transition : all 0.5s ease;
+}
+
 
 .btn_rollover {
     

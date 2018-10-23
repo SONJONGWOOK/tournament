@@ -9918,6 +9918,22 @@ var _selectBettle = function _selectBettle(e) {
     right: rightObj,
     result: selectObj === 'leftImg' ? leftObj : rightObj
   };
+  var tempStyle;
+
+  if (selectObj === 'leftImg') {
+    tempStyle = document.querySelector('#rightImg').style;
+    Object.assign(document.querySelector('#rightImg').style, {
+      transition: "all 0.5s ease",
+      opacity: '0'
+    });
+  } else {
+    tempStyle = document.querySelector('#leftImg').style;
+    Object.assign(document.querySelector('#leftImg').style, {
+      transition: "all 0.5s ease",
+      opacity: '0'
+    });
+  }
+
   roundIndex++; //결승전시 다음 배틀 시작을 함수 종료
 
   if (isFinalRound) {
@@ -9929,7 +9945,15 @@ var _selectBettle = function _selectBettle(e) {
     return;
   }
 
-  _startBattle();
+  setTimeout(function () {
+    if (selectObj === 'leftImg') {
+      document.querySelector('#rightImg').style = tempStyle;
+    } else {
+      document.querySelector('#leftImg').style = tempStyle;
+    }
+
+    _startBattle();
+  }, 1000);
 }; //뒤로가기기능 
 
 
@@ -10082,11 +10106,15 @@ var _fixedList = function _fixedList(list) {
 var _buildName = function _buildName(groupArr, roundData, group) {
   var addGroup = group.cloneNode(true);
   addGroup.childNodes[0].innerHTML = roundData.left.name;
-  addGroup.childNodes[2].innerHTML = roundData.right.name; //승자노드 생성
+  addGroup.childNodes[2].innerHTML = roundData.right.name; //승자컬러변경
 
-  console.log(addGroup.childNodes);
-
-  if (roundData.result != undefined && roundData.left.name == roundData.result.name) {}
+  if (roundData.result != undefined) {
+    if (roundData.left.name == roundData.result.name) {
+      addGroup.childNodes[0].style.color = "blue";
+    } else {
+      addGroup.childNodes[2].style.color = "red";
+    }
+  }
 
   groupArr.appendChild(addGroup);
 };
@@ -10127,7 +10155,11 @@ var _bracketBuild = function _bracketBuild(list) {
 
         _lastBuildName(rightRound, true, data.right.name);
 
-        document.querySelector('#winner').innerHTML = data.result == undefined ? '' : data.result.name;
+        if (data.result != undefined) {
+          document.querySelector('#winner').innerHTML = data.result.name;
+          data.result.name == data.left.name ? document.querySelector('#winner').style.color = "blue" : document.querySelector('#winner').style.color = "red";
+        }
+
         return;
       } //L R 반씩
 

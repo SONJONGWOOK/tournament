@@ -187,6 +187,7 @@ const _nextRound = () =>{
 //라운드 시작
 const _startBattle = () =>{
     
+    
     _bracketBuild(totalResult)
     
    let roundCount =  parseInt(roundResult.length*2) 
@@ -199,6 +200,7 @@ const _startBattle = () =>{
         _nextRound()
         return
    }
+  
    _nextBattle (roundResult[roundIndex].left   ,roundResult[roundIndex].right)
 }
 //배틀 상대 표시
@@ -231,6 +233,19 @@ const _selectBettle = (e) =>{
         right : rightObj,
         result : selectObj === 'leftImg' ? leftObj : rightObj 
      }
+
+     let tempStyle
+
+     if(selectObj === 'leftImg'){
+        tempStyle = document.querySelector('#rightImg').style
+        Object.assign(document.querySelector('#rightImg').style, {transition : "all 0.5s ease" ,  opacity :'0'})
+     }else{
+        tempStyle = document.querySelector('#leftImg').style
+        Object.assign(document.querySelector('#leftImg').style, {transition : "all 0.5s ease" ,  opacity : '0'})
+     }
+     
+
+    
      
      roundIndex++
        
@@ -243,8 +258,17 @@ const _selectBettle = (e) =>{
         _end()
         return
     }
+    setTimeout( () =>{
+        if(selectObj === 'leftImg'){
+            document.querySelector('#rightImg').style =tempStyle
+        
+         }else{
+            document.querySelector('#leftImg').style =tempStyle
+         }    
+        _startBattle()
+    } , 1000)
 
-    _startBattle()
+    
 
 }
 
