@@ -126,7 +126,7 @@ const _init = () =>{
     }
             
     totalResult = new Array()
-    pretotalResult = new Array()
+    // pretotalResult = new Array()
     isFinalRound = false
     isfinished = false
     //데이터준비
@@ -142,8 +142,6 @@ const _init = () =>{
     //클릭 이벤트
     _addEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
     _addEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
-    // _addEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
-    // _addEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
     _addEventLinsten(document.querySelector('#back') , 'click' , _prevBettle )
     centerImg.src = vs 
     _startBattle()
@@ -153,7 +151,10 @@ const _init = () =>{
 }
 
 const _end = () =>{
-    _bracketBuild(totalResult)
+
+    // _bracketBuild(totalResult)
+    //deep copy change
+    _bracketBuild(JSON.parse(JSON.stringify(totalResult)))
 
     _removeEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
     _removeEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
@@ -173,7 +174,7 @@ const _preProcess = () =>{
   
 
     _shuffleArr(list)
-    preRoundResult = new Array()
+    // preRoundResult = new Array()
     roundResult = new Array() 
   
 
@@ -182,14 +183,14 @@ const _preProcess = () =>{
             left : list[i],
             right : list[i+1]
         })
-        preRoundResult.push({
-            left : list[i],
-            right : list[i+1]
-        })
+        // preRoundResult.push({
+        //     left : list[i],
+        //     right : list[i+1]
+        // })
     }
     roundIndex = 0
     totalResult.push(roundResult)
-    pretotalResult.push(preRoundResult)
+    // pretotalResult.push(preRoundResult)
  
 }
 
@@ -220,7 +221,9 @@ const _startBattle = () =>{
         return
     }
     
-    _bracketBuild(totalResult)
+      // _bracketBuild(totalResult)
+      //deep copy change
+      _bracketBuild(JSON.parse(JSON.stringify(totalResult)))
    _nextBattle (roundResult[roundIndex].left   ,roundResult[roundIndex].right)
 }
 //배틀 상대 표시
@@ -253,11 +256,12 @@ const _selectBettle = (e) =>{
         right : rightObj,
         result : selectObj === 'leftImg' ? leftObj : rightObj 
     }
-    preRoundResult[roundIndex] = {
-        left : leftObj,
-        right : rightObj,
-        result : selectObj === 'leftImg' ? leftObj : rightObj 
-    }
+    
+    // preRoundResult[roundIndex] = {
+    //     left : leftObj,
+    //     right : rightObj,
+    //     result : selectObj === 'leftImg' ? leftObj : rightObj 
+    // }
 
      if(selectObj === 'leftImg'){
         tempStyle = rightImg.style
@@ -326,13 +330,13 @@ const _prevBettle = (e) =>{
         }else{    
             //넘어가기전에 마지막 배열삭제
             totalResult.pop()
-            pretotalResult.pop()
+            // pretotalResult.pop()
             
             
             // 변경된 목록을 가져와서 중간에 버퍼 결과를 저장
             
-            totalResult = [] 
-            totalResult = [ ...pretotalResult ]
+            // totalResult = [] 
+            // totalResult = [ ...pretotalResult ]
             
            
             roundResult = totalResult[totalResult.length-1]           

@@ -9685,14 +9685,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_vs1_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_vs1_png__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _img_oneicon_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/oneicon.png */ "./src/img/oneicon.png");
 /* harmony import */ var _img_oneicon_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_oneicon_png__WEBPACK_IMPORTED_MODULE_4__);
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
-
-function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
-
 /*
     이상형 월드컵
     comic.js 케릭터 데이터
@@ -9809,8 +9801,8 @@ var _init = function _init() {
     rightImg.style = tempStyle;
   }
 
-  totalResult = new Array();
-  pretotalResult = new Array();
+  totalResult = new Array(); // pretotalResult = new Array()
+
   isFinalRound = false;
   isfinished = false; //데이터준비
   //기존 모든 데이터 배열을 섞어서 토너먼트 횟수에 따라 다른 배열로 이동
@@ -9828,9 +9820,7 @@ var _init = function _init() {
 
   Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#leftImg'), 'click', _selectBettle);
 
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#rightImg'), 'click', _selectBettle); // _addEventLinsten(document.querySelector('#leftImg') , 'click' , _selectBettle )
-  // _addEventLinsten(document.querySelector('#rightImg') , 'click' , _selectBettle )
-
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#rightImg'), 'click', _selectBettle);
 
   Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(document.querySelector('#back'), 'click', _prevBettle);
 
@@ -9843,7 +9833,9 @@ var _init = function _init() {
 };
 
 var _end = function _end() {
-  Object(_tree_js__WEBPACK_IMPORTED_MODULE_1__["_bracketBuild"])(totalResult);
+  // _bracketBuild(totalResult)
+  //deep copy change
+  Object(_tree_js__WEBPACK_IMPORTED_MODULE_1__["_bracketBuild"])(JSON.parse(JSON.stringify(totalResult)));
 
   Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_removeEventLinsten"])(document.querySelector('#leftImg'), 'click', _selectBettle);
 
@@ -9862,25 +9854,23 @@ var _end = function _end() {
 
 
 var _preProcess = function _preProcess() {
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_shuffleArr"])(list);
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_shuffleArr"])(list); // preRoundResult = new Array()
 
-  preRoundResult = new Array();
+
   roundResult = new Array();
 
   for (var i = 0; i < list.length; i = i + 2) {
     roundResult.push({
       left: list[i],
       right: list[i + 1]
-    });
-    preRoundResult.push({
-      left: list[i],
-      right: list[i + 1]
-    });
+    }); // preRoundResult.push({
+    //     left : list[i],
+    //     right : list[i+1]
+    // })
   }
 
   roundIndex = 0;
-  totalResult.push(roundResult);
-  pretotalResult.push(preRoundResult);
+  totalResult.push(roundResult); // pretotalResult.push(preRoundResult)
 }; //다음 라운드 이동
 
 
@@ -9907,9 +9897,11 @@ var _startBattle = function _startBattle() {
     _nextRound();
 
     return;
-  }
+  } // _bracketBuild(totalResult)
+  //deep copy change
 
-  Object(_tree_js__WEBPACK_IMPORTED_MODULE_1__["_bracketBuild"])(totalResult);
+
+  Object(_tree_js__WEBPACK_IMPORTED_MODULE_1__["_bracketBuild"])(JSON.parse(JSON.stringify(totalResult)));
 
   _nextBattle(roundResult[roundIndex].left, roundResult[roundIndex].right);
 }; //배틀 상대 표시
@@ -9937,12 +9929,12 @@ var _selectBettle = function _selectBettle(e) {
   roundResult[roundIndex] = {
     left: leftObj,
     right: rightObj,
-    result: selectObj === 'leftImg' ? leftObj : rightObj
-  };
-  preRoundResult[roundIndex] = {
-    left: leftObj,
-    right: rightObj,
-    result: selectObj === 'leftImg' ? leftObj : rightObj
+    result: selectObj === 'leftImg' ? leftObj : rightObj // preRoundResult[roundIndex] = {
+    //     left : leftObj,
+    //     right : rightObj,
+    //     result : selectObj === 'leftImg' ? leftObj : rightObj 
+    // }
+
   };
 
   if (selectObj === 'leftImg') {
@@ -10021,11 +10013,11 @@ var _prevBettle = function _prevBettle(e) {
       return;
     } else {
       //넘어가기전에 마지막 배열삭제
-      totalResult.pop();
-      pretotalResult.pop(); // 변경된 목록을 가져와서 중간에 버퍼 결과를 저장
+      totalResult.pop(); // pretotalResult.pop()
+      // 변경된 목록을 가져와서 중간에 버퍼 결과를 저장
+      // totalResult = [] 
+      // totalResult = [ ...pretotalResult ]
 
-      totalResult = [];
-      totalResult = _toConsumableArray(pretotalResult);
       roundResult = totalResult[totalResult.length - 1];
       roundIndex = roundResult.length - 1;
       isFinalRound = false;
