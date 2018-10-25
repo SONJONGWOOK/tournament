@@ -17,22 +17,32 @@
 
 ## 초기 컨셉 
 ### 만화케릭터 64개를 놓고 무작위 64강부터 8강까지 선택할 수 있게 함.
-### 라운드 선택 기능
-### 히스토리 기능
-### 뒤로가기 기능
+#### 라운드 선택 기능
+#### 히스토리 기능
+#### 뒤로가기 기능
 
-## lang
-### HTML , CSS
-### Javascript
+#### 2018-10-15 타입(종류) 선택 추가
 
-## stack
-### webpack , fileloader
-### babel , bable-poyfill
+### lang
+#### HTML , CSS
+#### Javascript
 
-## file
-### index.html , /dist/css/index.css , /dist/css/tree.css , /dist/font/SDSwaggerTTF.woff
-### /src/js/entry.js , /src/js/comic.js , /src/js/tree.js , /src/js/utile.js , /dist/bundel.js 
-### img - /dist/src/img ... 
+### stack
+#### webpack , fileloader
+#### babel , bable-poyfill
+
+### file
+#### index.html , /dist/css/index.css , /dist/css/tree.css , /dist/font/SDSwaggerTTF.woff
+#### /src/js/entry.js , /src/js/comic.js , /src/js/tree.js , /src/js/utile.js , /dist/bundel.js 
+#### img - /dist/src/img ... 
+
+## 리뷰
+### 1차분 완료
+#### 나름 재미있게 한거 같다. 처음에 어떻게 해야할지 막막했는데 순서도를 그려가면서 순수 자바스크립트로만 하는 기회라고 생각하고 진행했다.
+#### 시간에 쫓겨서 많은 부분을 개념적으로 확립하지 못하고 지나쳤다. 특히나 배열이나 데이터 타입같은 부분들은 전혀 신경쓰지 못햇다.
+#### 현재 소스를 보면서 많은 생각이 들기도한다. 시간날때마다 짬짬히 수정해야할꺼같다. 
+#### 지금 하고있는 React 파일럿 프로젝트가 어느정도 마무리되면 React적용건에 대해서 생각을 해볼꺼같다.
+
 
 
 
