@@ -5,18 +5,18 @@
     util.js 유틸리티
 */
 
-import {onepiece} from './comic.js'
+import comicList , {onepiece , gudetama } from './comic.js'
 import {_bracketBuild} from './tree.js'
 import {_shuffleArr , _addEventLinsten , _removeEventLinsten} from './util.js'
 import vs from '../img/vs1.png'
-import logo from '../img/oneicon.png'
-
 
 //전체 데이터 - 이상형 종류 선택 현재 1개
-let dataList = onepiece()
+// let dataList = onepiece()
+//변경
+let dataList
+let logo
+let title
 
-let test = document.querySelector('#test')
-let img = document.querySelector('#img')
 //라운드변수
 let totalResult
 let pretotalResult
@@ -42,12 +42,34 @@ let tempStyle
 let list
 
 //페이지 상단 준비
+
 const _pageStartUp = () =>{
+    //추가 이상형 타입 추가
+    let selectType = document.querySelector('#typeSelect')
+    
+    comicList.map( (comic , index) =>{
+        let objOption = document.createElement("option")        
+        objOption = document.createElement("option");
+        objOption.text = comic.name
+        objOption.value = index
+        selectType.options.add(objOption)        
+    })
+    
+    _addEventLinsten( selectType , 'change' , (e) =>{ 
+        title =comicList[e.target.value].name 
+        logo = comicList[e.target.value].logo
+        dataList = comicList[e.target.value].list()     
+        _comicStartUp()
+    })
+}
+
+const _comicStartUp = () =>{
     let openModal = document.querySelector('.modalDialog')
     let selectRound = document.querySelector('#roundSelect')
     let startBtn = document.querySelector('#start')
     let history = document.querySelector('#history')
     let historyClose = document.querySelector('.close')
+    let titleText = document.querySelector('#title')
     let titleLogo = document.querySelector("#logo") 
     let blockOverlay = document.querySelector('.blockOverlay')       
     let objOption = document.createElement("option")        
@@ -63,7 +85,21 @@ const _pageStartUp = () =>{
     titleLogo.src = logo
     titleLogo.style.width  = '2rem';
     titleLogo.style.height  = '2.5rem';
-    
+    console.log(title)
+    titleText.innerHTML = title
+
+    //라운드 박스 초기화
+    while ( selectRound.hasChildNodes() ){
+        selectRound.removeChild (selectRound.firstChild)
+    }
+
+    //라운드 생성
+    objOption.text ='라운드 선택'
+    objOption.value = ''
+    objOption.disabled = true
+    objOption.selected = true
+    selectRound.options.add(objOption)
+    // <option value="" selected disabled>라운드 선택</option> -->
     //최대라운드는 아이템 요소의 갯수를 판별하여 결정
     while(maxRound < totalItem){
         maxRound = Math.pow(2, i++)
@@ -73,6 +109,8 @@ const _pageStartUp = () =>{
         objOption.value = maxRound
         selectRound.options.add(objOption)
     }
+    
+    
     //히스토리 view
     _addEventLinsten( history , 'click' , (e) =>{
 
@@ -104,6 +142,8 @@ const _pageStartUp = () =>{
         }
 
         if( selectRound.value == undefined ||  selectRound.value == '') {
+            //만약에 최소가 16강이라고했는데 그 이상의 케릭터가 없다면 최대 라운드로
+            totalRound  = totalRound > maxRound ? maxRound : totalRound
             alert("라운드 미선택시 "+totalRound +'강 으로 시작 합니다.')
         }
         _init()
@@ -152,6 +192,10 @@ const _init = () =>{
 
 const _end = () =>{
 
+    // 바빠서 생각을 못햇다. 
+    // 사실상 딥카피를 하면되었엇는데 
+    // 중간에 객체를 한단계 더 저장시켜서 하는건 나쁘지않은데 객체를 하나 더만들어야하는 단점이 존재한다.
+    // 속도체크를 해봐야지 알꺼같다.
     // _bracketBuild(totalResult)
     //deep copy change
     _bracketBuild(JSON.parse(JSON.stringify(totalResult)))

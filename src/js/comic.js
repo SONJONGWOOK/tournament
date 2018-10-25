@@ -1,3 +1,4 @@
+import onepieceLogo from '../img/oneicon.png'
 import img1 from '../onepiece/1.jpg'
 import img2 from '../onepiece/2.jpg'
 import img3 from '../onepiece/3.jpg'
@@ -62,6 +63,25 @@ import img61 from '../onepiece/61.jpg'
 import img62 from '../onepiece/62.jpg'
 import img63 from '../onepiece/63.jpg'
 import img64 from '../onepiece/64.jpg'
+
+import gudetamaLogo from '../img/gudetama.png'
+import gImg1 from '../gudetama/1.png'
+import gImg2 from '../gudetama/2.png'
+import gImg3 from '../gudetama/3.png'
+import gImg4 from '../gudetama/4.png'
+import gImg5 from '../gudetama/5.png'
+import gImg6 from '../gudetama/6.png'
+import gImg7 from '../gudetama/7.png'
+import gImg8 from '../gudetama/8.png'
+import gImg9 from '../gudetama/9.png'
+import gImg10 from '../gudetama/10.png'
+import gImg11 from '../gudetama/11.png'
+import gImg12 from '../gudetama/12.png'
+import gImg13 from '../gudetama/13.png'
+import gImg14 from '../gudetama/14.png'
+import gImg15 from '../gudetama/15.png'
+import gImg16 from '../gudetama/16.png'
+
 
 
 
@@ -135,4 +155,33 @@ const onepiece = () =>{
     ]
 } 
 
+const gudetama = () =>{
+    return [
+         { name : '만세구데',               path : gImg1  } ,
+         { name : '기본구데',               path : gImg2  } ,
+         { name : '덮어구데',               path : gImg3  } ,
+         { name : '소시지구데',               path : gImg4  } ,
+         { name : '니세타마',             path : gImg5  } ,
+         { name : '쿨쿨구데',             path : gImg6  } ,
+         { name : '추워구데',               path : gImg7 } ,
+         { name : '궁딩이구데',               path : gImg8 } ,
+         { name : '일어날수없구데',             path : gImg9  } ,
+         { name : '미래가안보이구데',           path : gImg10  } ,
+         { name : '허리아퍼구데',           path : gImg11  } ,
+         { name : '얼굴구데',               path : gImg12  } ,
+         { name : '집에갈구데',             path : gImg13  } ,
+         { name : '발라당구데',        path : gImg14  } ,
+         { name : '루돌푸구데',            path : gImg15 } ,
+         { name : '휴가티내는구데',              path : gImg16 } ,
+    ]
+}
+
+const comicList =  [
+        { name : '원피스'  , logo : onepieceLogo , list : onepiece } ,
+        { name : '구데타마'  ,logo : gudetamaLogo ,  list : gudetama } 
+    ]
+
+
+export default comicList
 export {onepiece}
+export {gudetama}

@@ -86,11 +86,12 @@ body{
     top:4rem;
     margin-top: -2rem;
 }
-#roundSelect{
+
+.selector{
     width: 7rem;
     height: 3rem;
 }
-#roundSelect:hover {
+#selector:hover {
     cursor: pointer;
 }
 

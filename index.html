@@ -8,11 +8,16 @@
   <body>
     
     <div id="header">
-      <div id=title><img id="logo">원피스 이상형 월드컵</div>
+      
+      <div> <img id="logo"><span id=title></span>이상형 월드컵</div>
       <div id=inputArea >
+
+        <select id="typeSelect" class="selector">
+          <option value="" selected disabled>종류 선택</option>
+        </select>
         <button class="btn_rollover" id="history" >히스토리보기</button>
-        <select id="roundSelect">
-          <option value="" selected disabled>라운드 선택</option>
+        <select id="roundSelect" class="selector">
+          <!-- <option value="" selected disabled>라운드 선택</option> -->
           </select>
           <button class="btn_rollover" id="start">시작</button>
           <button class="btn_rollover" id="back" >뒤로가기</button>

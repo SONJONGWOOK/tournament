@@ -9244,6 +9244,193 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./src/gudetama/1.png":
+/*!****************************!*\
+  !*** ./src/gudetama/1.png ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/ede3de065b3580a15c6fb5fdd2e219f9.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/10.png":
+/*!*****************************!*\
+  !*** ./src/gudetama/10.png ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/73ebf8a09a3cccb7147c9c4cd94f4a82.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/11.png":
+/*!*****************************!*\
+  !*** ./src/gudetama/11.png ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/0c76db53d3f5793e9237a5cd7a0871b2.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/12.png":
+/*!*****************************!*\
+  !*** ./src/gudetama/12.png ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/5f50087920c1c30614da0badc25ae387.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/13.png":
+/*!*****************************!*\
+  !*** ./src/gudetama/13.png ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/6c8e37ecdfa09e4da28d3fe4569390be.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/14.png":
+/*!*****************************!*\
+  !*** ./src/gudetama/14.png ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/c7eae14123fd588c52756f432603c97d.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/15.png":
+/*!*****************************!*\
+  !*** ./src/gudetama/15.png ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/f33ad50dd4e2165c22c2925365efa52c.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/16.png":
+/*!*****************************!*\
+  !*** ./src/gudetama/16.png ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/33b362e46830f062862783591ff8928e.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/2.png":
+/*!****************************!*\
+  !*** ./src/gudetama/2.png ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/745a20ce8c5958c53a42deb3474ed74d.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/3.png":
+/*!****************************!*\
+  !*** ./src/gudetama/3.png ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/ce2f3986f7ea9909ed8653188ba86fe8.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/4.png":
+/*!****************************!*\
+  !*** ./src/gudetama/4.png ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/37b10c74bc8f1e622dc312dcf6714ba5.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/5.png":
+/*!****************************!*\
+  !*** ./src/gudetama/5.png ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/5c21cbbbc5a0fe148b50e2cf3c915b0f.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/6.png":
+/*!****************************!*\
+  !*** ./src/gudetama/6.png ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/93f06cabac6210b528be2b2275c47cf5.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/7.png":
+/*!****************************!*\
+  !*** ./src/gudetama/7.png ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/93e22284e8acea17f381ca0f8af47ac0.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/8.png":
+/*!****************************!*\
+  !*** ./src/gudetama/8.png ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/3fd7d9592ec706a3b3b21e9ab403750f.png";
+
+/***/ }),
+
+/***/ "./src/gudetama/9.png":
+/*!****************************!*\
+  !*** ./src/gudetama/9.png ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/gudetama/8b984647c03ed40bf748039cbdaa3445.png";
+
+/***/ }),
+
+/***/ "./src/img/gudetama.png":
+/*!******************************!*\
+  !*** ./src/img/gudetama.png ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/src/img/27efcda2e97974f76efff99a1661118f.png";
+
+/***/ }),
+
 /***/ "./src/img/oneicon.png":
 /*!*****************************!*\
   !*** ./src/img/oneicon.png ***!
@@ -9270,140 +9457,195 @@ module.exports = "./dist/src/img/b109e29b86d71a136ff68ec2d5daea05.png";
 /*!*************************!*\
   !*** ./src/js/comic.js ***!
   \*************************/
-/*! exports provided: onepiece */
+/*! exports provided: default, onepiece, gudetama */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onepiece", function() { return onepiece; });
-/* harmony import */ var _onepiece_1_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../onepiece/1.jpg */ "./src/onepiece/1.jpg");
-/* harmony import */ var _onepiece_1_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_onepiece_1_jpg__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _onepiece_2_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../onepiece/2.jpg */ "./src/onepiece/2.jpg");
-/* harmony import */ var _onepiece_2_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_onepiece_2_jpg__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _onepiece_3_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../onepiece/3.jpg */ "./src/onepiece/3.jpg");
-/* harmony import */ var _onepiece_3_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_onepiece_3_jpg__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _onepiece_4_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../onepiece/4.jpg */ "./src/onepiece/4.jpg");
-/* harmony import */ var _onepiece_4_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_onepiece_4_jpg__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _onepiece_5_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../onepiece/5.jpg */ "./src/onepiece/5.jpg");
-/* harmony import */ var _onepiece_5_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_onepiece_5_jpg__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _onepiece_6_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../onepiece/6.jpg */ "./src/onepiece/6.jpg");
-/* harmony import */ var _onepiece_6_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_onepiece_6_jpg__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _onepiece_7_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../onepiece/7.jpg */ "./src/onepiece/7.jpg");
-/* harmony import */ var _onepiece_7_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_onepiece_7_jpg__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _onepiece_8_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../onepiece/8.jpg */ "./src/onepiece/8.jpg");
-/* harmony import */ var _onepiece_8_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_onepiece_8_jpg__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _onepiece_9_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../onepiece/9.jpg */ "./src/onepiece/9.jpg");
-/* harmony import */ var _onepiece_9_jpg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_onepiece_9_jpg__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _onepiece_10_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../onepiece/10.jpg */ "./src/onepiece/10.jpg");
-/* harmony import */ var _onepiece_10_jpg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_onepiece_10_jpg__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _onepiece_11_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../onepiece/11.jpg */ "./src/onepiece/11.jpg");
-/* harmony import */ var _onepiece_11_jpg__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_onepiece_11_jpg__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _onepiece_12_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../onepiece/12.jpg */ "./src/onepiece/12.jpg");
-/* harmony import */ var _onepiece_12_jpg__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_onepiece_12_jpg__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _onepiece_13_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../onepiece/13.jpg */ "./src/onepiece/13.jpg");
-/* harmony import */ var _onepiece_13_jpg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_onepiece_13_jpg__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _onepiece_14_jpg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../onepiece/14.jpg */ "./src/onepiece/14.jpg");
-/* harmony import */ var _onepiece_14_jpg__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_onepiece_14_jpg__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _onepiece_15_jpg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../onepiece/15.jpg */ "./src/onepiece/15.jpg");
-/* harmony import */ var _onepiece_15_jpg__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_onepiece_15_jpg__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _onepiece_16_jpg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../onepiece/16.jpg */ "./src/onepiece/16.jpg");
-/* harmony import */ var _onepiece_16_jpg__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_onepiece_16_jpg__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _onepiece_17_jpg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../onepiece/17.jpg */ "./src/onepiece/17.jpg");
-/* harmony import */ var _onepiece_17_jpg__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_onepiece_17_jpg__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _onepiece_18_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../onepiece/18.jpg */ "./src/onepiece/18.jpg");
-/* harmony import */ var _onepiece_18_jpg__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_onepiece_18_jpg__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _onepiece_19_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../onepiece/19.jpg */ "./src/onepiece/19.jpg");
-/* harmony import */ var _onepiece_19_jpg__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_onepiece_19_jpg__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var _onepiece_20_jpg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../onepiece/20.jpg */ "./src/onepiece/20.jpg");
-/* harmony import */ var _onepiece_20_jpg__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_onepiece_20_jpg__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _onepiece_21_jpg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../onepiece/21.jpg */ "./src/onepiece/21.jpg");
-/* harmony import */ var _onepiece_21_jpg__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_onepiece_21_jpg__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _onepiece_22_jpg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../onepiece/22.jpg */ "./src/onepiece/22.jpg");
-/* harmony import */ var _onepiece_22_jpg__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_onepiece_22_jpg__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var _onepiece_23_jpg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../onepiece/23.jpg */ "./src/onepiece/23.jpg");
-/* harmony import */ var _onepiece_23_jpg__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_onepiece_23_jpg__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var _onepiece_24_jpg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../onepiece/24.jpg */ "./src/onepiece/24.jpg");
-/* harmony import */ var _onepiece_24_jpg__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_onepiece_24_jpg__WEBPACK_IMPORTED_MODULE_23__);
-/* harmony import */ var _onepiece_25_jpg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../onepiece/25.jpg */ "./src/onepiece/25.jpg");
-/* harmony import */ var _onepiece_25_jpg__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_onepiece_25_jpg__WEBPACK_IMPORTED_MODULE_24__);
-/* harmony import */ var _onepiece_26_jpg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../onepiece/26.jpg */ "./src/onepiece/26.jpg");
-/* harmony import */ var _onepiece_26_jpg__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_onepiece_26_jpg__WEBPACK_IMPORTED_MODULE_25__);
-/* harmony import */ var _onepiece_27_jpg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../onepiece/27.jpg */ "./src/onepiece/27.jpg");
-/* harmony import */ var _onepiece_27_jpg__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(_onepiece_27_jpg__WEBPACK_IMPORTED_MODULE_26__);
-/* harmony import */ var _onepiece_28_jpg__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../onepiece/28.jpg */ "./src/onepiece/28.jpg");
-/* harmony import */ var _onepiece_28_jpg__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(_onepiece_28_jpg__WEBPACK_IMPORTED_MODULE_27__);
-/* harmony import */ var _onepiece_29_jpg__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../onepiece/29.jpg */ "./src/onepiece/29.jpg");
-/* harmony import */ var _onepiece_29_jpg__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(_onepiece_29_jpg__WEBPACK_IMPORTED_MODULE_28__);
-/* harmony import */ var _onepiece_30_jpg__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../onepiece/30.jpg */ "./src/onepiece/30.jpg");
-/* harmony import */ var _onepiece_30_jpg__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(_onepiece_30_jpg__WEBPACK_IMPORTED_MODULE_29__);
-/* harmony import */ var _onepiece_31_jpg__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../onepiece/31.jpg */ "./src/onepiece/31.jpg");
-/* harmony import */ var _onepiece_31_jpg__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(_onepiece_31_jpg__WEBPACK_IMPORTED_MODULE_30__);
-/* harmony import */ var _onepiece_32_jpg__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../onepiece/32.jpg */ "./src/onepiece/32.jpg");
-/* harmony import */ var _onepiece_32_jpg__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(_onepiece_32_jpg__WEBPACK_IMPORTED_MODULE_31__);
-/* harmony import */ var _onepiece_33_jpg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../onepiece/33.jpg */ "./src/onepiece/33.jpg");
-/* harmony import */ var _onepiece_33_jpg__WEBPACK_IMPORTED_MODULE_32___default = /*#__PURE__*/__webpack_require__.n(_onepiece_33_jpg__WEBPACK_IMPORTED_MODULE_32__);
-/* harmony import */ var _onepiece_34_jpg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../onepiece/34.jpg */ "./src/onepiece/34.jpg");
-/* harmony import */ var _onepiece_34_jpg__WEBPACK_IMPORTED_MODULE_33___default = /*#__PURE__*/__webpack_require__.n(_onepiece_34_jpg__WEBPACK_IMPORTED_MODULE_33__);
-/* harmony import */ var _onepiece_35_jpg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../onepiece/35.jpg */ "./src/onepiece/35.jpg");
-/* harmony import */ var _onepiece_35_jpg__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_onepiece_35_jpg__WEBPACK_IMPORTED_MODULE_34__);
-/* harmony import */ var _onepiece_36_jpg__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../onepiece/36.jpg */ "./src/onepiece/36.jpg");
-/* harmony import */ var _onepiece_36_jpg__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_onepiece_36_jpg__WEBPACK_IMPORTED_MODULE_35__);
-/* harmony import */ var _onepiece_37_jpg__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../onepiece/37.jpg */ "./src/onepiece/37.jpg");
-/* harmony import */ var _onepiece_37_jpg__WEBPACK_IMPORTED_MODULE_36___default = /*#__PURE__*/__webpack_require__.n(_onepiece_37_jpg__WEBPACK_IMPORTED_MODULE_36__);
-/* harmony import */ var _onepiece_38_jpg__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../onepiece/38.jpg */ "./src/onepiece/38.jpg");
-/* harmony import */ var _onepiece_38_jpg__WEBPACK_IMPORTED_MODULE_37___default = /*#__PURE__*/__webpack_require__.n(_onepiece_38_jpg__WEBPACK_IMPORTED_MODULE_37__);
-/* harmony import */ var _onepiece_39_jpg__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../onepiece/39.jpg */ "./src/onepiece/39.jpg");
-/* harmony import */ var _onepiece_39_jpg__WEBPACK_IMPORTED_MODULE_38___default = /*#__PURE__*/__webpack_require__.n(_onepiece_39_jpg__WEBPACK_IMPORTED_MODULE_38__);
-/* harmony import */ var _onepiece_40_jpg__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../onepiece/40.jpg */ "./src/onepiece/40.jpg");
-/* harmony import */ var _onepiece_40_jpg__WEBPACK_IMPORTED_MODULE_39___default = /*#__PURE__*/__webpack_require__.n(_onepiece_40_jpg__WEBPACK_IMPORTED_MODULE_39__);
-/* harmony import */ var _onepiece_41_jpg__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../onepiece/41.jpg */ "./src/onepiece/41.jpg");
-/* harmony import */ var _onepiece_41_jpg__WEBPACK_IMPORTED_MODULE_40___default = /*#__PURE__*/__webpack_require__.n(_onepiece_41_jpg__WEBPACK_IMPORTED_MODULE_40__);
-/* harmony import */ var _onepiece_42_jpg__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../onepiece/42.jpg */ "./src/onepiece/42.jpg");
-/* harmony import */ var _onepiece_42_jpg__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_onepiece_42_jpg__WEBPACK_IMPORTED_MODULE_41__);
-/* harmony import */ var _onepiece_43_jpg__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../onepiece/43.jpg */ "./src/onepiece/43.jpg");
-/* harmony import */ var _onepiece_43_jpg__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_onepiece_43_jpg__WEBPACK_IMPORTED_MODULE_42__);
-/* harmony import */ var _onepiece_44_jpg__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../onepiece/44.jpg */ "./src/onepiece/44.jpg");
-/* harmony import */ var _onepiece_44_jpg__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_onepiece_44_jpg__WEBPACK_IMPORTED_MODULE_43__);
-/* harmony import */ var _onepiece_45_jpg__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../onepiece/45.jpg */ "./src/onepiece/45.jpg");
-/* harmony import */ var _onepiece_45_jpg__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_onepiece_45_jpg__WEBPACK_IMPORTED_MODULE_44__);
-/* harmony import */ var _onepiece_46_jpg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../onepiece/46.jpg */ "./src/onepiece/46.jpg");
-/* harmony import */ var _onepiece_46_jpg__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_onepiece_46_jpg__WEBPACK_IMPORTED_MODULE_45__);
-/* harmony import */ var _onepiece_47_jpg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../onepiece/47.jpg */ "./src/onepiece/47.jpg");
-/* harmony import */ var _onepiece_47_jpg__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_onepiece_47_jpg__WEBPACK_IMPORTED_MODULE_46__);
-/* harmony import */ var _onepiece_48_jpg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ../onepiece/48.jpg */ "./src/onepiece/48.jpg");
-/* harmony import */ var _onepiece_48_jpg__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_onepiece_48_jpg__WEBPACK_IMPORTED_MODULE_47__);
-/* harmony import */ var _onepiece_49_jpg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../onepiece/49.jpg */ "./src/onepiece/49.jpg");
-/* harmony import */ var _onepiece_49_jpg__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_onepiece_49_jpg__WEBPACK_IMPORTED_MODULE_48__);
-/* harmony import */ var _onepiece_50_jpg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ../onepiece/50.jpg */ "./src/onepiece/50.jpg");
-/* harmony import */ var _onepiece_50_jpg__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_onepiece_50_jpg__WEBPACK_IMPORTED_MODULE_49__);
-/* harmony import */ var _onepiece_51_jpg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ../onepiece/51.jpg */ "./src/onepiece/51.jpg");
-/* harmony import */ var _onepiece_51_jpg__WEBPACK_IMPORTED_MODULE_50___default = /*#__PURE__*/__webpack_require__.n(_onepiece_51_jpg__WEBPACK_IMPORTED_MODULE_50__);
-/* harmony import */ var _onepiece_52_jpg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ../onepiece/52.jpg */ "./src/onepiece/52.jpg");
-/* harmony import */ var _onepiece_52_jpg__WEBPACK_IMPORTED_MODULE_51___default = /*#__PURE__*/__webpack_require__.n(_onepiece_52_jpg__WEBPACK_IMPORTED_MODULE_51__);
-/* harmony import */ var _onepiece_53_jpg__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ../onepiece/53.jpg */ "./src/onepiece/53.jpg");
-/* harmony import */ var _onepiece_53_jpg__WEBPACK_IMPORTED_MODULE_52___default = /*#__PURE__*/__webpack_require__.n(_onepiece_53_jpg__WEBPACK_IMPORTED_MODULE_52__);
-/* harmony import */ var _onepiece_54_jpg__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ../onepiece/54.jpg */ "./src/onepiece/54.jpg");
-/* harmony import */ var _onepiece_54_jpg__WEBPACK_IMPORTED_MODULE_53___default = /*#__PURE__*/__webpack_require__.n(_onepiece_54_jpg__WEBPACK_IMPORTED_MODULE_53__);
-/* harmony import */ var _onepiece_55_jpg__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ../onepiece/55.jpg */ "./src/onepiece/55.jpg");
-/* harmony import */ var _onepiece_55_jpg__WEBPACK_IMPORTED_MODULE_54___default = /*#__PURE__*/__webpack_require__.n(_onepiece_55_jpg__WEBPACK_IMPORTED_MODULE_54__);
-/* harmony import */ var _onepiece_56_jpg__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ../onepiece/56.jpg */ "./src/onepiece/56.jpg");
-/* harmony import */ var _onepiece_56_jpg__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(_onepiece_56_jpg__WEBPACK_IMPORTED_MODULE_55__);
-/* harmony import */ var _onepiece_57_jpg__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ../onepiece/57.jpg */ "./src/onepiece/57.jpg");
-/* harmony import */ var _onepiece_57_jpg__WEBPACK_IMPORTED_MODULE_56___default = /*#__PURE__*/__webpack_require__.n(_onepiece_57_jpg__WEBPACK_IMPORTED_MODULE_56__);
-/* harmony import */ var _onepiece_58_jpg__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ../onepiece/58.jpg */ "./src/onepiece/58.jpg");
-/* harmony import */ var _onepiece_58_jpg__WEBPACK_IMPORTED_MODULE_57___default = /*#__PURE__*/__webpack_require__.n(_onepiece_58_jpg__WEBPACK_IMPORTED_MODULE_57__);
-/* harmony import */ var _onepiece_59_jpg__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ../onepiece/59.jpg */ "./src/onepiece/59.jpg");
-/* harmony import */ var _onepiece_59_jpg__WEBPACK_IMPORTED_MODULE_58___default = /*#__PURE__*/__webpack_require__.n(_onepiece_59_jpg__WEBPACK_IMPORTED_MODULE_58__);
-/* harmony import */ var _onepiece_60_jpg__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ../onepiece/60.jpg */ "./src/onepiece/60.jpg");
-/* harmony import */ var _onepiece_60_jpg__WEBPACK_IMPORTED_MODULE_59___default = /*#__PURE__*/__webpack_require__.n(_onepiece_60_jpg__WEBPACK_IMPORTED_MODULE_59__);
-/* harmony import */ var _onepiece_61_jpg__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ../onepiece/61.jpg */ "./src/onepiece/61.jpg");
-/* harmony import */ var _onepiece_61_jpg__WEBPACK_IMPORTED_MODULE_60___default = /*#__PURE__*/__webpack_require__.n(_onepiece_61_jpg__WEBPACK_IMPORTED_MODULE_60__);
-/* harmony import */ var _onepiece_62_jpg__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ../onepiece/62.jpg */ "./src/onepiece/62.jpg");
-/* harmony import */ var _onepiece_62_jpg__WEBPACK_IMPORTED_MODULE_61___default = /*#__PURE__*/__webpack_require__.n(_onepiece_62_jpg__WEBPACK_IMPORTED_MODULE_61__);
-/* harmony import */ var _onepiece_63_jpg__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ../onepiece/63.jpg */ "./src/onepiece/63.jpg");
-/* harmony import */ var _onepiece_63_jpg__WEBPACK_IMPORTED_MODULE_62___default = /*#__PURE__*/__webpack_require__.n(_onepiece_63_jpg__WEBPACK_IMPORTED_MODULE_62__);
-/* harmony import */ var _onepiece_64_jpg__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ../onepiece/64.jpg */ "./src/onepiece/64.jpg");
-/* harmony import */ var _onepiece_64_jpg__WEBPACK_IMPORTED_MODULE_63___default = /*#__PURE__*/__webpack_require__.n(_onepiece_64_jpg__WEBPACK_IMPORTED_MODULE_63__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gudetama", function() { return gudetama; });
+/* harmony import */ var _img_oneicon_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../img/oneicon.png */ "./src/img/oneicon.png");
+/* harmony import */ var _img_oneicon_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_img_oneicon_png__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _onepiece_1_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../onepiece/1.jpg */ "./src/onepiece/1.jpg");
+/* harmony import */ var _onepiece_1_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_onepiece_1_jpg__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _onepiece_2_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../onepiece/2.jpg */ "./src/onepiece/2.jpg");
+/* harmony import */ var _onepiece_2_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_onepiece_2_jpg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _onepiece_3_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../onepiece/3.jpg */ "./src/onepiece/3.jpg");
+/* harmony import */ var _onepiece_3_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_onepiece_3_jpg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _onepiece_4_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../onepiece/4.jpg */ "./src/onepiece/4.jpg");
+/* harmony import */ var _onepiece_4_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_onepiece_4_jpg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _onepiece_5_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../onepiece/5.jpg */ "./src/onepiece/5.jpg");
+/* harmony import */ var _onepiece_5_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_onepiece_5_jpg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _onepiece_6_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../onepiece/6.jpg */ "./src/onepiece/6.jpg");
+/* harmony import */ var _onepiece_6_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_onepiece_6_jpg__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _onepiece_7_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../onepiece/7.jpg */ "./src/onepiece/7.jpg");
+/* harmony import */ var _onepiece_7_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_onepiece_7_jpg__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _onepiece_8_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../onepiece/8.jpg */ "./src/onepiece/8.jpg");
+/* harmony import */ var _onepiece_8_jpg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_onepiece_8_jpg__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _onepiece_9_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../onepiece/9.jpg */ "./src/onepiece/9.jpg");
+/* harmony import */ var _onepiece_9_jpg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_onepiece_9_jpg__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _onepiece_10_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../onepiece/10.jpg */ "./src/onepiece/10.jpg");
+/* harmony import */ var _onepiece_10_jpg__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_onepiece_10_jpg__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _onepiece_11_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../onepiece/11.jpg */ "./src/onepiece/11.jpg");
+/* harmony import */ var _onepiece_11_jpg__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_onepiece_11_jpg__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _onepiece_12_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../onepiece/12.jpg */ "./src/onepiece/12.jpg");
+/* harmony import */ var _onepiece_12_jpg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_onepiece_12_jpg__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _onepiece_13_jpg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../onepiece/13.jpg */ "./src/onepiece/13.jpg");
+/* harmony import */ var _onepiece_13_jpg__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_onepiece_13_jpg__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _onepiece_14_jpg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../onepiece/14.jpg */ "./src/onepiece/14.jpg");
+/* harmony import */ var _onepiece_14_jpg__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_onepiece_14_jpg__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _onepiece_15_jpg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../onepiece/15.jpg */ "./src/onepiece/15.jpg");
+/* harmony import */ var _onepiece_15_jpg__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_onepiece_15_jpg__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _onepiece_16_jpg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../onepiece/16.jpg */ "./src/onepiece/16.jpg");
+/* harmony import */ var _onepiece_16_jpg__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_onepiece_16_jpg__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _onepiece_17_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../onepiece/17.jpg */ "./src/onepiece/17.jpg");
+/* harmony import */ var _onepiece_17_jpg__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_onepiece_17_jpg__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _onepiece_18_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../onepiece/18.jpg */ "./src/onepiece/18.jpg");
+/* harmony import */ var _onepiece_18_jpg__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_onepiece_18_jpg__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _onepiece_19_jpg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../onepiece/19.jpg */ "./src/onepiece/19.jpg");
+/* harmony import */ var _onepiece_19_jpg__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_onepiece_19_jpg__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _onepiece_20_jpg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../onepiece/20.jpg */ "./src/onepiece/20.jpg");
+/* harmony import */ var _onepiece_20_jpg__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_onepiece_20_jpg__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _onepiece_21_jpg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../onepiece/21.jpg */ "./src/onepiece/21.jpg");
+/* harmony import */ var _onepiece_21_jpg__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_onepiece_21_jpg__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _onepiece_22_jpg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../onepiece/22.jpg */ "./src/onepiece/22.jpg");
+/* harmony import */ var _onepiece_22_jpg__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_onepiece_22_jpg__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _onepiece_23_jpg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../onepiece/23.jpg */ "./src/onepiece/23.jpg");
+/* harmony import */ var _onepiece_23_jpg__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_onepiece_23_jpg__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var _onepiece_24_jpg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../onepiece/24.jpg */ "./src/onepiece/24.jpg");
+/* harmony import */ var _onepiece_24_jpg__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_onepiece_24_jpg__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _onepiece_25_jpg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../onepiece/25.jpg */ "./src/onepiece/25.jpg");
+/* harmony import */ var _onepiece_25_jpg__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_onepiece_25_jpg__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var _onepiece_26_jpg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../onepiece/26.jpg */ "./src/onepiece/26.jpg");
+/* harmony import */ var _onepiece_26_jpg__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(_onepiece_26_jpg__WEBPACK_IMPORTED_MODULE_26__);
+/* harmony import */ var _onepiece_27_jpg__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../onepiece/27.jpg */ "./src/onepiece/27.jpg");
+/* harmony import */ var _onepiece_27_jpg__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(_onepiece_27_jpg__WEBPACK_IMPORTED_MODULE_27__);
+/* harmony import */ var _onepiece_28_jpg__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../onepiece/28.jpg */ "./src/onepiece/28.jpg");
+/* harmony import */ var _onepiece_28_jpg__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(_onepiece_28_jpg__WEBPACK_IMPORTED_MODULE_28__);
+/* harmony import */ var _onepiece_29_jpg__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../onepiece/29.jpg */ "./src/onepiece/29.jpg");
+/* harmony import */ var _onepiece_29_jpg__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(_onepiece_29_jpg__WEBPACK_IMPORTED_MODULE_29__);
+/* harmony import */ var _onepiece_30_jpg__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../onepiece/30.jpg */ "./src/onepiece/30.jpg");
+/* harmony import */ var _onepiece_30_jpg__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(_onepiece_30_jpg__WEBPACK_IMPORTED_MODULE_30__);
+/* harmony import */ var _onepiece_31_jpg__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../onepiece/31.jpg */ "./src/onepiece/31.jpg");
+/* harmony import */ var _onepiece_31_jpg__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(_onepiece_31_jpg__WEBPACK_IMPORTED_MODULE_31__);
+/* harmony import */ var _onepiece_32_jpg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../onepiece/32.jpg */ "./src/onepiece/32.jpg");
+/* harmony import */ var _onepiece_32_jpg__WEBPACK_IMPORTED_MODULE_32___default = /*#__PURE__*/__webpack_require__.n(_onepiece_32_jpg__WEBPACK_IMPORTED_MODULE_32__);
+/* harmony import */ var _onepiece_33_jpg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../onepiece/33.jpg */ "./src/onepiece/33.jpg");
+/* harmony import */ var _onepiece_33_jpg__WEBPACK_IMPORTED_MODULE_33___default = /*#__PURE__*/__webpack_require__.n(_onepiece_33_jpg__WEBPACK_IMPORTED_MODULE_33__);
+/* harmony import */ var _onepiece_34_jpg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../onepiece/34.jpg */ "./src/onepiece/34.jpg");
+/* harmony import */ var _onepiece_34_jpg__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_onepiece_34_jpg__WEBPACK_IMPORTED_MODULE_34__);
+/* harmony import */ var _onepiece_35_jpg__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../onepiece/35.jpg */ "./src/onepiece/35.jpg");
+/* harmony import */ var _onepiece_35_jpg__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_onepiece_35_jpg__WEBPACK_IMPORTED_MODULE_35__);
+/* harmony import */ var _onepiece_36_jpg__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../onepiece/36.jpg */ "./src/onepiece/36.jpg");
+/* harmony import */ var _onepiece_36_jpg__WEBPACK_IMPORTED_MODULE_36___default = /*#__PURE__*/__webpack_require__.n(_onepiece_36_jpg__WEBPACK_IMPORTED_MODULE_36__);
+/* harmony import */ var _onepiece_37_jpg__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../onepiece/37.jpg */ "./src/onepiece/37.jpg");
+/* harmony import */ var _onepiece_37_jpg__WEBPACK_IMPORTED_MODULE_37___default = /*#__PURE__*/__webpack_require__.n(_onepiece_37_jpg__WEBPACK_IMPORTED_MODULE_37__);
+/* harmony import */ var _onepiece_38_jpg__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../onepiece/38.jpg */ "./src/onepiece/38.jpg");
+/* harmony import */ var _onepiece_38_jpg__WEBPACK_IMPORTED_MODULE_38___default = /*#__PURE__*/__webpack_require__.n(_onepiece_38_jpg__WEBPACK_IMPORTED_MODULE_38__);
+/* harmony import */ var _onepiece_39_jpg__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../onepiece/39.jpg */ "./src/onepiece/39.jpg");
+/* harmony import */ var _onepiece_39_jpg__WEBPACK_IMPORTED_MODULE_39___default = /*#__PURE__*/__webpack_require__.n(_onepiece_39_jpg__WEBPACK_IMPORTED_MODULE_39__);
+/* harmony import */ var _onepiece_40_jpg__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../onepiece/40.jpg */ "./src/onepiece/40.jpg");
+/* harmony import */ var _onepiece_40_jpg__WEBPACK_IMPORTED_MODULE_40___default = /*#__PURE__*/__webpack_require__.n(_onepiece_40_jpg__WEBPACK_IMPORTED_MODULE_40__);
+/* harmony import */ var _onepiece_41_jpg__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../onepiece/41.jpg */ "./src/onepiece/41.jpg");
+/* harmony import */ var _onepiece_41_jpg__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_onepiece_41_jpg__WEBPACK_IMPORTED_MODULE_41__);
+/* harmony import */ var _onepiece_42_jpg__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../onepiece/42.jpg */ "./src/onepiece/42.jpg");
+/* harmony import */ var _onepiece_42_jpg__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_onepiece_42_jpg__WEBPACK_IMPORTED_MODULE_42__);
+/* harmony import */ var _onepiece_43_jpg__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../onepiece/43.jpg */ "./src/onepiece/43.jpg");
+/* harmony import */ var _onepiece_43_jpg__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_onepiece_43_jpg__WEBPACK_IMPORTED_MODULE_43__);
+/* harmony import */ var _onepiece_44_jpg__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../onepiece/44.jpg */ "./src/onepiece/44.jpg");
+/* harmony import */ var _onepiece_44_jpg__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_onepiece_44_jpg__WEBPACK_IMPORTED_MODULE_44__);
+/* harmony import */ var _onepiece_45_jpg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../onepiece/45.jpg */ "./src/onepiece/45.jpg");
+/* harmony import */ var _onepiece_45_jpg__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_onepiece_45_jpg__WEBPACK_IMPORTED_MODULE_45__);
+/* harmony import */ var _onepiece_46_jpg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../onepiece/46.jpg */ "./src/onepiece/46.jpg");
+/* harmony import */ var _onepiece_46_jpg__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_onepiece_46_jpg__WEBPACK_IMPORTED_MODULE_46__);
+/* harmony import */ var _onepiece_47_jpg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ../onepiece/47.jpg */ "./src/onepiece/47.jpg");
+/* harmony import */ var _onepiece_47_jpg__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_onepiece_47_jpg__WEBPACK_IMPORTED_MODULE_47__);
+/* harmony import */ var _onepiece_48_jpg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../onepiece/48.jpg */ "./src/onepiece/48.jpg");
+/* harmony import */ var _onepiece_48_jpg__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_onepiece_48_jpg__WEBPACK_IMPORTED_MODULE_48__);
+/* harmony import */ var _onepiece_49_jpg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ../onepiece/49.jpg */ "./src/onepiece/49.jpg");
+/* harmony import */ var _onepiece_49_jpg__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_onepiece_49_jpg__WEBPACK_IMPORTED_MODULE_49__);
+/* harmony import */ var _onepiece_50_jpg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ../onepiece/50.jpg */ "./src/onepiece/50.jpg");
+/* harmony import */ var _onepiece_50_jpg__WEBPACK_IMPORTED_MODULE_50___default = /*#__PURE__*/__webpack_require__.n(_onepiece_50_jpg__WEBPACK_IMPORTED_MODULE_50__);
+/* harmony import */ var _onepiece_51_jpg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ../onepiece/51.jpg */ "./src/onepiece/51.jpg");
+/* harmony import */ var _onepiece_51_jpg__WEBPACK_IMPORTED_MODULE_51___default = /*#__PURE__*/__webpack_require__.n(_onepiece_51_jpg__WEBPACK_IMPORTED_MODULE_51__);
+/* harmony import */ var _onepiece_52_jpg__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ../onepiece/52.jpg */ "./src/onepiece/52.jpg");
+/* harmony import */ var _onepiece_52_jpg__WEBPACK_IMPORTED_MODULE_52___default = /*#__PURE__*/__webpack_require__.n(_onepiece_52_jpg__WEBPACK_IMPORTED_MODULE_52__);
+/* harmony import */ var _onepiece_53_jpg__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ../onepiece/53.jpg */ "./src/onepiece/53.jpg");
+/* harmony import */ var _onepiece_53_jpg__WEBPACK_IMPORTED_MODULE_53___default = /*#__PURE__*/__webpack_require__.n(_onepiece_53_jpg__WEBPACK_IMPORTED_MODULE_53__);
+/* harmony import */ var _onepiece_54_jpg__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ../onepiece/54.jpg */ "./src/onepiece/54.jpg");
+/* harmony import */ var _onepiece_54_jpg__WEBPACK_IMPORTED_MODULE_54___default = /*#__PURE__*/__webpack_require__.n(_onepiece_54_jpg__WEBPACK_IMPORTED_MODULE_54__);
+/* harmony import */ var _onepiece_55_jpg__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ../onepiece/55.jpg */ "./src/onepiece/55.jpg");
+/* harmony import */ var _onepiece_55_jpg__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(_onepiece_55_jpg__WEBPACK_IMPORTED_MODULE_55__);
+/* harmony import */ var _onepiece_56_jpg__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ../onepiece/56.jpg */ "./src/onepiece/56.jpg");
+/* harmony import */ var _onepiece_56_jpg__WEBPACK_IMPORTED_MODULE_56___default = /*#__PURE__*/__webpack_require__.n(_onepiece_56_jpg__WEBPACK_IMPORTED_MODULE_56__);
+/* harmony import */ var _onepiece_57_jpg__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ../onepiece/57.jpg */ "./src/onepiece/57.jpg");
+/* harmony import */ var _onepiece_57_jpg__WEBPACK_IMPORTED_MODULE_57___default = /*#__PURE__*/__webpack_require__.n(_onepiece_57_jpg__WEBPACK_IMPORTED_MODULE_57__);
+/* harmony import */ var _onepiece_58_jpg__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ../onepiece/58.jpg */ "./src/onepiece/58.jpg");
+/* harmony import */ var _onepiece_58_jpg__WEBPACK_IMPORTED_MODULE_58___default = /*#__PURE__*/__webpack_require__.n(_onepiece_58_jpg__WEBPACK_IMPORTED_MODULE_58__);
+/* harmony import */ var _onepiece_59_jpg__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ../onepiece/59.jpg */ "./src/onepiece/59.jpg");
+/* harmony import */ var _onepiece_59_jpg__WEBPACK_IMPORTED_MODULE_59___default = /*#__PURE__*/__webpack_require__.n(_onepiece_59_jpg__WEBPACK_IMPORTED_MODULE_59__);
+/* harmony import */ var _onepiece_60_jpg__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ../onepiece/60.jpg */ "./src/onepiece/60.jpg");
+/* harmony import */ var _onepiece_60_jpg__WEBPACK_IMPORTED_MODULE_60___default = /*#__PURE__*/__webpack_require__.n(_onepiece_60_jpg__WEBPACK_IMPORTED_MODULE_60__);
+/* harmony import */ var _onepiece_61_jpg__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ../onepiece/61.jpg */ "./src/onepiece/61.jpg");
+/* harmony import */ var _onepiece_61_jpg__WEBPACK_IMPORTED_MODULE_61___default = /*#__PURE__*/__webpack_require__.n(_onepiece_61_jpg__WEBPACK_IMPORTED_MODULE_61__);
+/* harmony import */ var _onepiece_62_jpg__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ../onepiece/62.jpg */ "./src/onepiece/62.jpg");
+/* harmony import */ var _onepiece_62_jpg__WEBPACK_IMPORTED_MODULE_62___default = /*#__PURE__*/__webpack_require__.n(_onepiece_62_jpg__WEBPACK_IMPORTED_MODULE_62__);
+/* harmony import */ var _onepiece_63_jpg__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ../onepiece/63.jpg */ "./src/onepiece/63.jpg");
+/* harmony import */ var _onepiece_63_jpg__WEBPACK_IMPORTED_MODULE_63___default = /*#__PURE__*/__webpack_require__.n(_onepiece_63_jpg__WEBPACK_IMPORTED_MODULE_63__);
+/* harmony import */ var _onepiece_64_jpg__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ../onepiece/64.jpg */ "./src/onepiece/64.jpg");
+/* harmony import */ var _onepiece_64_jpg__WEBPACK_IMPORTED_MODULE_64___default = /*#__PURE__*/__webpack_require__.n(_onepiece_64_jpg__WEBPACK_IMPORTED_MODULE_64__);
+/* harmony import */ var _img_gudetama_png__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! ../img/gudetama.png */ "./src/img/gudetama.png");
+/* harmony import */ var _img_gudetama_png__WEBPACK_IMPORTED_MODULE_65___default = /*#__PURE__*/__webpack_require__.n(_img_gudetama_png__WEBPACK_IMPORTED_MODULE_65__);
+/* harmony import */ var _gudetama_1_png__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! ../gudetama/1.png */ "./src/gudetama/1.png");
+/* harmony import */ var _gudetama_1_png__WEBPACK_IMPORTED_MODULE_66___default = /*#__PURE__*/__webpack_require__.n(_gudetama_1_png__WEBPACK_IMPORTED_MODULE_66__);
+/* harmony import */ var _gudetama_2_png__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! ../gudetama/2.png */ "./src/gudetama/2.png");
+/* harmony import */ var _gudetama_2_png__WEBPACK_IMPORTED_MODULE_67___default = /*#__PURE__*/__webpack_require__.n(_gudetama_2_png__WEBPACK_IMPORTED_MODULE_67__);
+/* harmony import */ var _gudetama_3_png__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! ../gudetama/3.png */ "./src/gudetama/3.png");
+/* harmony import */ var _gudetama_3_png__WEBPACK_IMPORTED_MODULE_68___default = /*#__PURE__*/__webpack_require__.n(_gudetama_3_png__WEBPACK_IMPORTED_MODULE_68__);
+/* harmony import */ var _gudetama_4_png__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! ../gudetama/4.png */ "./src/gudetama/4.png");
+/* harmony import */ var _gudetama_4_png__WEBPACK_IMPORTED_MODULE_69___default = /*#__PURE__*/__webpack_require__.n(_gudetama_4_png__WEBPACK_IMPORTED_MODULE_69__);
+/* harmony import */ var _gudetama_5_png__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! ../gudetama/5.png */ "./src/gudetama/5.png");
+/* harmony import */ var _gudetama_5_png__WEBPACK_IMPORTED_MODULE_70___default = /*#__PURE__*/__webpack_require__.n(_gudetama_5_png__WEBPACK_IMPORTED_MODULE_70__);
+/* harmony import */ var _gudetama_6_png__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! ../gudetama/6.png */ "./src/gudetama/6.png");
+/* harmony import */ var _gudetama_6_png__WEBPACK_IMPORTED_MODULE_71___default = /*#__PURE__*/__webpack_require__.n(_gudetama_6_png__WEBPACK_IMPORTED_MODULE_71__);
+/* harmony import */ var _gudetama_7_png__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! ../gudetama/7.png */ "./src/gudetama/7.png");
+/* harmony import */ var _gudetama_7_png__WEBPACK_IMPORTED_MODULE_72___default = /*#__PURE__*/__webpack_require__.n(_gudetama_7_png__WEBPACK_IMPORTED_MODULE_72__);
+/* harmony import */ var _gudetama_8_png__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! ../gudetama/8.png */ "./src/gudetama/8.png");
+/* harmony import */ var _gudetama_8_png__WEBPACK_IMPORTED_MODULE_73___default = /*#__PURE__*/__webpack_require__.n(_gudetama_8_png__WEBPACK_IMPORTED_MODULE_73__);
+/* harmony import */ var _gudetama_9_png__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! ../gudetama/9.png */ "./src/gudetama/9.png");
+/* harmony import */ var _gudetama_9_png__WEBPACK_IMPORTED_MODULE_74___default = /*#__PURE__*/__webpack_require__.n(_gudetama_9_png__WEBPACK_IMPORTED_MODULE_74__);
+/* harmony import */ var _gudetama_10_png__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! ../gudetama/10.png */ "./src/gudetama/10.png");
+/* harmony import */ var _gudetama_10_png__WEBPACK_IMPORTED_MODULE_75___default = /*#__PURE__*/__webpack_require__.n(_gudetama_10_png__WEBPACK_IMPORTED_MODULE_75__);
+/* harmony import */ var _gudetama_11_png__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! ../gudetama/11.png */ "./src/gudetama/11.png");
+/* harmony import */ var _gudetama_11_png__WEBPACK_IMPORTED_MODULE_76___default = /*#__PURE__*/__webpack_require__.n(_gudetama_11_png__WEBPACK_IMPORTED_MODULE_76__);
+/* harmony import */ var _gudetama_12_png__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! ../gudetama/12.png */ "./src/gudetama/12.png");
+/* harmony import */ var _gudetama_12_png__WEBPACK_IMPORTED_MODULE_77___default = /*#__PURE__*/__webpack_require__.n(_gudetama_12_png__WEBPACK_IMPORTED_MODULE_77__);
+/* harmony import */ var _gudetama_13_png__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! ../gudetama/13.png */ "./src/gudetama/13.png");
+/* harmony import */ var _gudetama_13_png__WEBPACK_IMPORTED_MODULE_78___default = /*#__PURE__*/__webpack_require__.n(_gudetama_13_png__WEBPACK_IMPORTED_MODULE_78__);
+/* harmony import */ var _gudetama_14_png__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! ../gudetama/14.png */ "./src/gudetama/14.png");
+/* harmony import */ var _gudetama_14_png__WEBPACK_IMPORTED_MODULE_79___default = /*#__PURE__*/__webpack_require__.n(_gudetama_14_png__WEBPACK_IMPORTED_MODULE_79__);
+/* harmony import */ var _gudetama_15_png__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! ../gudetama/15.png */ "./src/gudetama/15.png");
+/* harmony import */ var _gudetama_15_png__WEBPACK_IMPORTED_MODULE_80___default = /*#__PURE__*/__webpack_require__.n(_gudetama_15_png__WEBPACK_IMPORTED_MODULE_80__);
+/* harmony import */ var _gudetama_16_png__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! ../gudetama/16.png */ "./src/gudetama/16.png");
+/* harmony import */ var _gudetama_16_png__WEBPACK_IMPORTED_MODULE_81___default = /*#__PURE__*/__webpack_require__.n(_gudetama_16_png__WEBPACK_IMPORTED_MODULE_81__);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -9472,198 +9714,261 @@ __webpack_require__.r(__webpack_exports__);
 var onepiece = function onepiece() {
   return [{
     name: '루피',
-    path: _onepiece_1_jpg__WEBPACK_IMPORTED_MODULE_0___default.a
+    path: _onepiece_1_jpg__WEBPACK_IMPORTED_MODULE_1___default.a
   }, {
     name: '부룩',
-    path: _onepiece_2_jpg__WEBPACK_IMPORTED_MODULE_1___default.a
+    path: _onepiece_2_jpg__WEBPACK_IMPORTED_MODULE_2___default.a
   }, {
     name: '조로',
-    path: _onepiece_3_jpg__WEBPACK_IMPORTED_MODULE_2___default.a
+    path: _onepiece_3_jpg__WEBPACK_IMPORTED_MODULE_3___default.a
   }, {
     name: '로빈',
-    path: _onepiece_4_jpg__WEBPACK_IMPORTED_MODULE_3___default.a
+    path: _onepiece_4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a
   }, {
     name: '흰수염',
-    path: _onepiece_5_jpg__WEBPACK_IMPORTED_MODULE_4___default.a
+    path: _onepiece_5_jpg__WEBPACK_IMPORTED_MODULE_5___default.a
   }, {
     name: '프랑키',
-    path: _onepiece_6_jpg__WEBPACK_IMPORTED_MODULE_5___default.a
+    path: _onepiece_6_jpg__WEBPACK_IMPORTED_MODULE_6___default.a
   }, {
     name: '나미',
-    path: _onepiece_7_jpg__WEBPACK_IMPORTED_MODULE_6___default.a
+    path: _onepiece_7_jpg__WEBPACK_IMPORTED_MODULE_7___default.a
   }, {
     name: '상디',
-    path: _onepiece_8_jpg__WEBPACK_IMPORTED_MODULE_7___default.a
+    path: _onepiece_8_jpg__WEBPACK_IMPORTED_MODULE_8___default.a
   }, {
     name: '상크스',
-    path: _onepiece_9_jpg__WEBPACK_IMPORTED_MODULE_8___default.a
+    path: _onepiece_9_jpg__WEBPACK_IMPORTED_MODULE_9___default.a
   }, {
     name: '유스타스',
-    path: _onepiece_10_jpg__WEBPACK_IMPORTED_MODULE_9___default.a
+    path: _onepiece_10_jpg__WEBPACK_IMPORTED_MODULE_10___default.a
   }, {
     name: '검은수염',
-    path: _onepiece_11_jpg__WEBPACK_IMPORTED_MODULE_10___default.a
+    path: _onepiece_11_jpg__WEBPACK_IMPORTED_MODULE_11___default.a
   }, {
     name: '로저',
-    path: _onepiece_12_jpg__WEBPACK_IMPORTED_MODULE_11___default.a
+    path: _onepiece_12_jpg__WEBPACK_IMPORTED_MODULE_12___default.a
   }, {
     name: '레일리',
-    path: _onepiece_13_jpg__WEBPACK_IMPORTED_MODULE_12___default.a
+    path: _onepiece_13_jpg__WEBPACK_IMPORTED_MODULE_13___default.a
   }, {
     name: '몽블랑노랜드',
-    path: _onepiece_14_jpg__WEBPACK_IMPORTED_MODULE_13___default.a
+    path: _onepiece_14_jpg__WEBPACK_IMPORTED_MODULE_14___default.a
   }, {
     name: '샬롯링링',
-    path: _onepiece_15_jpg__WEBPACK_IMPORTED_MODULE_14___default.a
+    path: _onepiece_15_jpg__WEBPACK_IMPORTED_MODULE_15___default.a
   }, {
     name: '카이도',
-    path: _onepiece_16_jpg__WEBPACK_IMPORTED_MODULE_15___default.a
+    path: _onepiece_16_jpg__WEBPACK_IMPORTED_MODULE_16___default.a
   }, {
     name: '에이스',
-    path: _onepiece_17_jpg__WEBPACK_IMPORTED_MODULE_16___default.a
+    path: _onepiece_17_jpg__WEBPACK_IMPORTED_MODULE_17___default.a
   }, {
     name: '마르코',
-    path: _onepiece_18_jpg__WEBPACK_IMPORTED_MODULE_17___default.a
+    path: _onepiece_18_jpg__WEBPACK_IMPORTED_MODULE_18___default.a
   }, {
     name: '바제스',
-    path: _onepiece_19_jpg__WEBPACK_IMPORTED_MODULE_18___default.a
+    path: _onepiece_19_jpg__WEBPACK_IMPORTED_MODULE_19___default.a
   }, {
     name: '시류',
-    path: _onepiece_20_jpg__WEBPACK_IMPORTED_MODULE_19___default.a
+    path: _onepiece_20_jpg__WEBPACK_IMPORTED_MODULE_20___default.a
   }, {
     name: '라피트',
-    path: _onepiece_21_jpg__WEBPACK_IMPORTED_MODULE_20___default.a
+    path: _onepiece_21_jpg__WEBPACK_IMPORTED_MODULE_21___default.a
   }, {
     name: '반오거',
-    path: _onepiece_22_jpg__WEBPACK_IMPORTED_MODULE_21___default.a
+    path: _onepiece_22_jpg__WEBPACK_IMPORTED_MODULE_22___default.a
   }, {
     name: '사도크Q',
-    path: _onepiece_23_jpg__WEBPACK_IMPORTED_MODULE_22___default.a
+    path: _onepiece_23_jpg__WEBPACK_IMPORTED_MODULE_23___default.a
   }, {
     name: '로우',
-    path: _onepiece_24_jpg__WEBPACK_IMPORTED_MODULE_23___default.a
+    path: _onepiece_24_jpg__WEBPACK_IMPORTED_MODULE_24___default.a
   }, {
     name: '호킨스',
-    path: _onepiece_25_jpg__WEBPACK_IMPORTED_MODULE_24___default.a
+    path: _onepiece_25_jpg__WEBPACK_IMPORTED_MODULE_25___default.a
   }, {
     name: '아푸',
-    path: _onepiece_26_jpg__WEBPACK_IMPORTED_MODULE_25___default.a
+    path: _onepiece_26_jpg__WEBPACK_IMPORTED_MODULE_26___default.a
   }, {
     name: '우르지',
-    path: _onepiece_27_jpg__WEBPACK_IMPORTED_MODULE_26___default.a
+    path: _onepiece_27_jpg__WEBPACK_IMPORTED_MODULE_27___default.a
   }, {
     name: '보니',
-    path: _onepiece_28_jpg__WEBPACK_IMPORTED_MODULE_27___default.a
+    path: _onepiece_28_jpg__WEBPACK_IMPORTED_MODULE_28___default.a
   }, {
     name: '카리브',
-    path: _onepiece_29_jpg__WEBPACK_IMPORTED_MODULE_28___default.a
+    path: _onepiece_29_jpg__WEBPACK_IMPORTED_MODULE_29___default.a
   }, {
     name: '아카이누',
-    path: _onepiece_30_jpg__WEBPACK_IMPORTED_MODULE_29___default.a
+    path: _onepiece_30_jpg__WEBPACK_IMPORTED_MODULE_30___default.a
   }, {
     name: '센고쿠',
-    path: _onepiece_31_jpg__WEBPACK_IMPORTED_MODULE_30___default.a
+    path: _onepiece_31_jpg__WEBPACK_IMPORTED_MODULE_31___default.a
   }, {
     name: '후지토라',
-    path: _onepiece_32_jpg__WEBPACK_IMPORTED_MODULE_31___default.a
+    path: _onepiece_32_jpg__WEBPACK_IMPORTED_MODULE_32___default.a
   }, {
     name: '아오키지',
-    path: _onepiece_33_jpg__WEBPACK_IMPORTED_MODULE_32___default.a
+    path: _onepiece_33_jpg__WEBPACK_IMPORTED_MODULE_33___default.a
   }, {
     name: '가프',
-    path: _onepiece_34_jpg__WEBPACK_IMPORTED_MODULE_33___default.a
+    path: _onepiece_34_jpg__WEBPACK_IMPORTED_MODULE_34___default.a
   }, {
     name: '코비',
-    path: _onepiece_35_jpg__WEBPACK_IMPORTED_MODULE_34___default.a
+    path: _onepiece_35_jpg__WEBPACK_IMPORTED_MODULE_35___default.a
   }, {
     name: '로시난테',
-    path: _onepiece_36_jpg__WEBPACK_IMPORTED_MODULE_35___default.a
+    path: _onepiece_36_jpg__WEBPACK_IMPORTED_MODULE_36___default.a
   }, {
     name: '미호크',
-    path: _onepiece_37_jpg__WEBPACK_IMPORTED_MODULE_36___default.a
+    path: _onepiece_37_jpg__WEBPACK_IMPORTED_MODULE_37___default.a
   }, {
     name: '크로커다일',
-    path: _onepiece_38_jpg__WEBPACK_IMPORTED_MODULE_37___default.a
+    path: _onepiece_38_jpg__WEBPACK_IMPORTED_MODULE_38___default.a
   }, {
     name: '도플라밍고',
-    path: _onepiece_39_jpg__WEBPACK_IMPORTED_MODULE_38___default.a
+    path: _onepiece_39_jpg__WEBPACK_IMPORTED_MODULE_39___default.a
   }, {
     name: '쿠마',
-    path: _onepiece_40_jpg__WEBPACK_IMPORTED_MODULE_39___default.a
+    path: _onepiece_40_jpg__WEBPACK_IMPORTED_MODULE_40___default.a
   }, {
     name: '행콕',
-    path: _onepiece_41_jpg__WEBPACK_IMPORTED_MODULE_40___default.a
+    path: _onepiece_41_jpg__WEBPACK_IMPORTED_MODULE_41___default.a
   }, {
     name: '겟코모리아',
-    path: _onepiece_42_jpg__WEBPACK_IMPORTED_MODULE_41___default.a
+    path: _onepiece_42_jpg__WEBPACK_IMPORTED_MODULE_42___default.a
   }, {
     name: '버기',
-    path: _onepiece_43_jpg__WEBPACK_IMPORTED_MODULE_42___default.a
+    path: _onepiece_43_jpg__WEBPACK_IMPORTED_MODULE_43___default.a
   }, {
     name: '로브루치',
-    path: _onepiece_44_jpg__WEBPACK_IMPORTED_MODULE_43___default.a
+    path: _onepiece_44_jpg__WEBPACK_IMPORTED_MODULE_44___default.a
   }, {
     name: '마젤란',
-    path: _onepiece_45_jpg__WEBPACK_IMPORTED_MODULE_44___default.a
+    path: _onepiece_45_jpg__WEBPACK_IMPORTED_MODULE_45___default.a
   }, {
     name: '사보',
-    path: _onepiece_46_jpg__WEBPACK_IMPORTED_MODULE_45___default.a
+    path: _onepiece_46_jpg__WEBPACK_IMPORTED_MODULE_46___default.a
   }, {
     name: '이반코브',
-    path: _onepiece_47_jpg__WEBPACK_IMPORTED_MODULE_46___default.a
+    path: _onepiece_47_jpg__WEBPACK_IMPORTED_MODULE_47___default.a
   }, {
     name: '코알라',
-    path: _onepiece_48_jpg__WEBPACK_IMPORTED_MODULE_47___default.a
+    path: _onepiece_48_jpg__WEBPACK_IMPORTED_MODULE_48___default.a
   }, {
     name: '제프',
-    path: _onepiece_49_jpg__WEBPACK_IMPORTED_MODULE_48___default.a
+    path: _onepiece_49_jpg__WEBPACK_IMPORTED_MODULE_49___default.a
   }, {
     name: '카쿠',
-    path: _onepiece_50_jpg__WEBPACK_IMPORTED_MODULE_49___default.a
+    path: _onepiece_50_jpg__WEBPACK_IMPORTED_MODULE_50___default.a
   }, {
     name: '징베',
-    path: _onepiece_51_jpg__WEBPACK_IMPORTED_MODULE_50___default.a
+    path: _onepiece_51_jpg__WEBPACK_IMPORTED_MODULE_51___default.a
   }, {
     name: '헤르메포',
-    path: _onepiece_52_jpg__WEBPACK_IMPORTED_MODULE_51___default.a
+    path: _onepiece_52_jpg__WEBPACK_IMPORTED_MODULE_52___default.a
   }, {
     name: '키자루',
-    path: _onepiece_53_jpg__WEBPACK_IMPORTED_MODULE_52___default.a
+    path: _onepiece_53_jpg__WEBPACK_IMPORTED_MODULE_53___default.a
   }, {
     name: '에넬',
-    path: _onepiece_54_jpg__WEBPACK_IMPORTED_MODULE_53___default.a
+    path: _onepiece_54_jpg__WEBPACK_IMPORTED_MODULE_54___default.a
   }, {
     name: '비비',
-    path: _onepiece_55_jpg__WEBPACK_IMPORTED_MODULE_54___default.a
+    path: _onepiece_55_jpg__WEBPACK_IMPORTED_MODULE_55___default.a
   }, {
     name: '아이스버그',
-    path: _onepiece_56_jpg__WEBPACK_IMPORTED_MODULE_55___default.a
+    path: _onepiece_56_jpg__WEBPACK_IMPORTED_MODULE_56___default.a
   }, {
     name: '시라호시',
-    path: _onepiece_57_jpg__WEBPACK_IMPORTED_MODULE_56___default.a
+    path: _onepiece_57_jpg__WEBPACK_IMPORTED_MODULE_57___default.a
   }, {
     name: '레베카',
-    path: _onepiece_58_jpg__WEBPACK_IMPORTED_MODULE_57___default.a
+    path: _onepiece_58_jpg__WEBPACK_IMPORTED_MODULE_58___default.a
   }, {
     name: '킨에몬',
-    path: _onepiece_59_jpg__WEBPACK_IMPORTED_MODULE_58___default.a
+    path: _onepiece_59_jpg__WEBPACK_IMPORTED_MODULE_59___default.a
   }, {
     name: '이누아라시',
-    path: _onepiece_60_jpg__WEBPACK_IMPORTED_MODULE_59___default.a
+    path: _onepiece_60_jpg__WEBPACK_IMPORTED_MODULE_60___default.a
   }, {
     name: '네코마무시',
-    path: _onepiece_61_jpg__WEBPACK_IMPORTED_MODULE_60___default.a
+    path: _onepiece_61_jpg__WEBPACK_IMPORTED_MODULE_61___default.a
   }, {
     name: '우솝',
-    path: _onepiece_62_jpg__WEBPACK_IMPORTED_MODULE_61___default.a
+    path: _onepiece_62_jpg__WEBPACK_IMPORTED_MODULE_62___default.a
   }, {
     name: '벤베크만',
-    path: _onepiece_63_jpg__WEBPACK_IMPORTED_MODULE_62___default.a
+    path: _onepiece_63_jpg__WEBPACK_IMPORTED_MODULE_63___default.a
   }, {
     name: '쵸파',
-    path: _onepiece_64_jpg__WEBPACK_IMPORTED_MODULE_63___default.a
+    path: _onepiece_64_jpg__WEBPACK_IMPORTED_MODULE_64___default.a
   }];
 };
+
+var gudetama = function gudetama() {
+  return [{
+    name: '만세구데',
+    path: _gudetama_1_png__WEBPACK_IMPORTED_MODULE_66___default.a
+  }, {
+    name: '기본구데',
+    path: _gudetama_2_png__WEBPACK_IMPORTED_MODULE_67___default.a
+  }, {
+    name: '덮어구데',
+    path: _gudetama_3_png__WEBPACK_IMPORTED_MODULE_68___default.a
+  }, {
+    name: '소시지구데',
+    path: _gudetama_4_png__WEBPACK_IMPORTED_MODULE_69___default.a
+  }, {
+    name: '니세타마',
+    path: _gudetama_5_png__WEBPACK_IMPORTED_MODULE_70___default.a
+  }, {
+    name: '쿨쿨구데',
+    path: _gudetama_6_png__WEBPACK_IMPORTED_MODULE_71___default.a
+  }, {
+    name: '추워구데',
+    path: _gudetama_7_png__WEBPACK_IMPORTED_MODULE_72___default.a
+  }, {
+    name: '궁딩이구데',
+    path: _gudetama_8_png__WEBPACK_IMPORTED_MODULE_73___default.a
+  }, {
+    name: '일어날수없구데',
+    path: _gudetama_9_png__WEBPACK_IMPORTED_MODULE_74___default.a
+  }, {
+    name: '미래가안보이구데',
+    path: _gudetama_10_png__WEBPACK_IMPORTED_MODULE_75___default.a
+  }, {
+    name: '허리아퍼구데',
+    path: _gudetama_11_png__WEBPACK_IMPORTED_MODULE_76___default.a
+  }, {
+    name: '얼굴구데',
+    path: _gudetama_12_png__WEBPACK_IMPORTED_MODULE_77___default.a
+  }, {
+    name: '집에갈구데',
+    path: _gudetama_13_png__WEBPACK_IMPORTED_MODULE_78___default.a
+  }, {
+    name: '발라당구데',
+    path: _gudetama_14_png__WEBPACK_IMPORTED_MODULE_79___default.a
+  }, {
+    name: '루돌푸구데',
+    path: _gudetama_15_png__WEBPACK_IMPORTED_MODULE_80___default.a
+  }, {
+    name: '휴가티내는구데',
+    path: _gudetama_16_png__WEBPACK_IMPORTED_MODULE_81___default.a
+  }];
+};
+
+var comicList = [{
+  name: '원피스',
+  logo: _img_oneicon_png__WEBPACK_IMPORTED_MODULE_0___default.a,
+  list: onepiece
+}, {
+  name: '구데타마',
+  logo: _img_gudetama_png__WEBPACK_IMPORTED_MODULE_65___default.a,
+  list: gudetama
+}];
+/* harmony default export */ __webpack_exports__["default"] = (comicList);
 
 
 
@@ -9683,8 +9988,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./util.js */ "./src/js/util.js");
 /* harmony import */ var _img_vs1_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/vs1.png */ "./src/img/vs1.png");
 /* harmony import */ var _img_vs1_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_vs1_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _img_oneicon_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/oneicon.png */ "./src/img/oneicon.png");
-/* harmony import */ var _img_oneicon_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_oneicon_png__WEBPACK_IMPORTED_MODULE_4__);
 /*
     이상형 월드컵
     comic.js 케릭터 데이터
@@ -9694,12 +9997,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
  //전체 데이터 - 이상형 종류 선택 현재 1개
+// let dataList = onepiece()
+//변경
 
-var dataList = Object(_comic_js__WEBPACK_IMPORTED_MODULE_0__["onepiece"])();
-var test = document.querySelector('#test');
-var img = document.querySelector('#img'); //라운드변수
+var dataList;
+var logo;
+var title; //라운드변수
 
 var totalResult;
 var pretotalResult;
@@ -9723,11 +10027,32 @@ var tempStyle; //대진표에 사용될 리스트
 var list; //페이지 상단 준비
 
 var _pageStartUp = function _pageStartUp() {
+  //추가 이상형 타입 추가
+  var selectType = document.querySelector('#typeSelect');
+  _comic_js__WEBPACK_IMPORTED_MODULE_0__["default"].map(function (comic, index) {
+    var objOption = document.createElement("option");
+    objOption = document.createElement("option");
+    objOption.text = comic.name;
+    objOption.value = index;
+    selectType.options.add(objOption);
+  });
+
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(selectType, 'change', function (e) {
+    title = _comic_js__WEBPACK_IMPORTED_MODULE_0__["default"][e.target.value].name;
+    logo = _comic_js__WEBPACK_IMPORTED_MODULE_0__["default"][e.target.value].logo;
+    dataList = _comic_js__WEBPACK_IMPORTED_MODULE_0__["default"][e.target.value].list();
+
+    _comicStartUp();
+  });
+};
+
+var _comicStartUp = function _comicStartUp() {
   var openModal = document.querySelector('.modalDialog');
   var selectRound = document.querySelector('#roundSelect');
   var startBtn = document.querySelector('#start');
   var history = document.querySelector('#history');
   var historyClose = document.querySelector('.close');
+  var titleText = document.querySelector('#title');
   var titleLogo = document.querySelector("#logo");
   var blockOverlay = document.querySelector('.blockOverlay');
   var objOption = document.createElement("option");
@@ -9738,9 +10063,23 @@ var _pageStartUp = function _pageStartUp() {
 
   totalRound = 16;
   var i = 1;
-  titleLogo.src = _img_oneicon_png__WEBPACK_IMPORTED_MODULE_4___default.a;
+  titleLogo.src = logo;
   titleLogo.style.width = '2rem';
-  titleLogo.style.height = '2.5rem'; //최대라운드는 아이템 요소의 갯수를 판별하여 결정
+  titleLogo.style.height = '2.5rem';
+  console.log(title);
+  titleText.innerHTML = title; //라운드 박스 초기화
+
+  while (selectRound.hasChildNodes()) {
+    selectRound.removeChild(selectRound.firstChild);
+  } //라운드 생성
+
+
+  objOption.text = '라운드 선택';
+  objOption.value = '';
+  objOption.disabled = true;
+  objOption.selected = true;
+  selectRound.options.add(objOption); // <option value="" selected disabled>라운드 선택</option> -->
+  //최대라운드는 아이템 요소의 갯수를 판별하여 결정
 
   while (maxRound < totalItem) {
     maxRound = Math.pow(2, i++);
@@ -9780,6 +10119,8 @@ var _pageStartUp = function _pageStartUp() {
     }
 
     if (selectRound.value == undefined || selectRound.value == '') {
+      //만약에 최소가 16강이라고했는데 그 이상의 케릭터가 없다면 최대 라운드로
+      totalRound = totalRound > maxRound ? maxRound : totalRound;
       alert("라운드 미선택시 " + totalRound + '강 으로 시작 합니다.');
     }
 
@@ -9833,6 +10174,10 @@ var _init = function _init() {
 };
 
 var _end = function _end() {
+  // 바빠서 생각을 못햇다. 
+  // 사실상 딥카피를 하면되었엇는데 
+  // 중간에 객체를 한단계 더 저장시켜서 하는건 나쁘지않은데 객체를 하나 더만들어야하는 단점이 존재한다.
+  // 속도체크를 해봐야지 알꺼같다.
   // _bracketBuild(totalResult)
   //deep copy change
   Object(_tree_js__WEBPACK_IMPORTED_MODULE_1__["_bracketBuild"])(JSON.parse(JSON.stringify(totalResult)));
