@@ -29,7 +29,7 @@
 
 ### stack
 #### webpack , fileloader
-#### babel , bable-poyfill
+#### babel , bable-polyfill
 
 ### file
 #### index.html , /dist/css/index.css , /dist/css/tree.css , /dist/font/SDSwaggerTTF.woff
