@@ -40,12 +40,26 @@ let tempStyle
 
 //대진표에 사용될 리스트
 let list
+let totalItem
+//최소라운드
+let minRound = 8
+let maxRound = 0
+
+let selectType = document.querySelector('#typeSelect')
+let openModal = document.querySelector('.modalDialog')
+let selectRound = document.querySelector('#roundSelect')
+let startBtn = document.querySelector('#start')
+let history = document.querySelector('#history')
+let historyClose = document.querySelector('.close')
+let titleText = document.querySelector('#title')
+let titleLogo = document.querySelector("#logo") 
+let blockOverlay = document.querySelector('.blockOverlay')       
+let objOption = document.createElement("option")        
 
 //페이지 상단 준비
 
 const _pageStartUp = () =>{
     //추가 이상형 타입 추가
-    let selectType = document.querySelector('#typeSelect')
     
     comicList.map( (comic , index) =>{
         let objOption = document.createElement("option")        
@@ -61,23 +75,59 @@ const _pageStartUp = () =>{
         dataList = comicList[e.target.value].list()     
         _comicStartUp()
     })
+
+     //히스토리 view
+     _addEventLinsten( history , 'click' , (e) =>{
+
+        if(openModal.style.display == "block" ){
+            openModal.style.display = "none"
+            blockOverlay.style.display='none'
+        }else{
+            openModal.style.display = "block"
+            blockOverlay.style.display='block'
+        }
+             
+    })
+    _addEventLinsten( historyClose , 'click' , (e) =>{
+       
+        blockOverlay.style.display='none'
+        openModal.style.display = 'none'
+    })
+    
+    //셀렉트박스값 변경
+    _addEventLinsten( selectRound , 'change' , (e) =>{ 
+        totalRound =  e.target.value
+    })
+    //시작
+    _addEventLinsten(startBtn , 'click' , (e) =>{
+        
+        if(isFinalRound == false && isfinished != true){
+
+            if( confirm("아직 게임이 종료되지않았습니다. 새로시작하시겠습니까? ")){
+                _end()
+
+            }else{
+                return
+            }
+            // alert("아직 게임이 종료되지않았습니다. ")
+            // return
+        }
+
+        if( selectRound.value == undefined ||  selectRound.value == '') {
+            //만약에 최소가 16강이라고했는데 그 이상의 케릭터가 없다면 최대 라운드로
+            totalRound  = totalRound > maxRound ? maxRound : totalRound
+            alert("라운드 미선택시 "+totalRound +'강 으로 시작 합니다.')
+        }
+        _init()
+    })       
 }
 
 const _comicStartUp = () =>{
-    let openModal = document.querySelector('.modalDialog')
-    let selectRound = document.querySelector('#roundSelect')
-    let startBtn = document.querySelector('#start')
-    let history = document.querySelector('#history')
-    let historyClose = document.querySelector('.close')
-    let titleText = document.querySelector('#title')
-    let titleLogo = document.querySelector("#logo") 
-    let blockOverlay = document.querySelector('.blockOverlay')       
-    let objOption = document.createElement("option")        
-
-    let totalItem = dataList.length
+ 
+    totalItem = dataList.length
     //최소라운드
-    let minRound = 8
-    let maxRound = 0
+    minRound = 8
+    maxRound = 0
     //기본값 16강 
     totalRound = 16
     let i=1
@@ -109,45 +159,6 @@ const _comicStartUp = () =>{
         objOption.value = maxRound
         selectRound.options.add(objOption)
     }
-    
-    
-    //히스토리 view
-    _addEventLinsten( history , 'click' , (e) =>{
-
-        if(openModal.style.display == "block" ){
-            openModal.style.display = "none"
-            blockOverlay.style.display='none'
-        }else{
-            openModal.style.display = "block"
-            blockOverlay.style.display='block'
-        }
-             
-    })
-    _addEventLinsten( historyClose , 'click' , (e) =>{
-       
-        blockOverlay.style.display='none'
-        openModal.style.display = 'none'
-    })
-    
-    //셀렉트박스값 변경
-    _addEventLinsten( selectRound , 'change' , (e) =>{ 
-        totalRound =  e.target.value
-    })
-    //시작
-    _addEventLinsten(startBtn , 'click' , (e) =>{
-        
-        if(isFinalRound == false && isfinished != true){
-            alert("아직 게임이 종료되지않았습니다. ")
-            return
-        }
-
-        if( selectRound.value == undefined ||  selectRound.value == '') {
-            //만약에 최소가 16강이라고했는데 그 이상의 케릭터가 없다면 최대 라운드로
-            totalRound  = totalRound > maxRound ? maxRound : totalRound
-            alert("라운드 미선택시 "+totalRound +'강 으로 시작 합니다.')
-        }
-        _init()
-    })       
 
 }
 

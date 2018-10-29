@@ -10024,11 +10024,24 @@ var rightEl;
 var roundIndex;
 var tempStyle; //대진표에 사용될 리스트
 
-var list; //페이지 상단 준비
+var list;
+var totalItem; //최소라운드
+
+var minRound = 8;
+var maxRound = 0;
+var selectType = document.querySelector('#typeSelect');
+var openModal = document.querySelector('.modalDialog');
+var selectRound = document.querySelector('#roundSelect');
+var startBtn = document.querySelector('#start');
+var history = document.querySelector('#history');
+var historyClose = document.querySelector('.close');
+var titleText = document.querySelector('#title');
+var titleLogo = document.querySelector("#logo");
+var blockOverlay = document.querySelector('.blockOverlay');
+var objOption = document.createElement("option"); //페이지 상단 준비
 
 var _pageStartUp = function _pageStartUp() {
   //추가 이상형 타입 추가
-  var selectType = document.querySelector('#typeSelect');
   _comic_js__WEBPACK_IMPORTED_MODULE_0__["default"].map(function (comic, index) {
     var objOption = document.createElement("option");
     objOption = document.createElement("option");
@@ -10043,23 +10056,56 @@ var _pageStartUp = function _pageStartUp() {
     dataList = _comic_js__WEBPACK_IMPORTED_MODULE_0__["default"][e.target.value].list();
 
     _comicStartUp();
+  }); //히스토리 view
+
+
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(history, 'click', function (e) {
+    if (openModal.style.display == "block") {
+      openModal.style.display = "none";
+      blockOverlay.style.display = 'none';
+    } else {
+      openModal.style.display = "block";
+      blockOverlay.style.display = 'block';
+    }
+  });
+
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(historyClose, 'click', function (e) {
+    blockOverlay.style.display = 'none';
+    openModal.style.display = 'none';
+  }); //셀렉트박스값 변경
+
+
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(selectRound, 'change', function (e) {
+    totalRound = e.target.value;
+  }); //시작
+
+
+  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(startBtn, 'click', function (e) {
+    if (isFinalRound == false && isfinished != true) {
+      if (confirm("아직 게임이 종료되지않았습니다. 새로시작하시겠습니까? ")) {
+        _end();
+      } else {
+        return;
+      } // alert("아직 게임이 종료되지않았습니다. ")
+      // return
+
+    }
+
+    if (selectRound.value == undefined || selectRound.value == '') {
+      //만약에 최소가 16강이라고했는데 그 이상의 케릭터가 없다면 최대 라운드로
+      totalRound = totalRound > maxRound ? maxRound : totalRound;
+      alert("라운드 미선택시 " + totalRound + '강 으로 시작 합니다.');
+    }
+
+    _init();
   });
 };
 
 var _comicStartUp = function _comicStartUp() {
-  var openModal = document.querySelector('.modalDialog');
-  var selectRound = document.querySelector('#roundSelect');
-  var startBtn = document.querySelector('#start');
-  var history = document.querySelector('#history');
-  var historyClose = document.querySelector('.close');
-  var titleText = document.querySelector('#title');
-  var titleLogo = document.querySelector("#logo");
-  var blockOverlay = document.querySelector('.blockOverlay');
-  var objOption = document.createElement("option");
-  var totalItem = dataList.length; //최소라운드
+  totalItem = dataList.length; //최소라운드
 
-  var minRound = 8;
-  var maxRound = 0; //기본값 16강 
+  minRound = 8;
+  maxRound = 0; //기본값 16강 
 
   totalRound = 16;
   var i = 1;
@@ -10088,44 +10134,7 @@ var _comicStartUp = function _comicStartUp() {
     objOption.text = maxRound + "강";
     objOption.value = maxRound;
     selectRound.options.add(objOption);
-  } //히스토리 view
-
-
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(history, 'click', function (e) {
-    if (openModal.style.display == "block") {
-      openModal.style.display = "none";
-      blockOverlay.style.display = 'none';
-    } else {
-      openModal.style.display = "block";
-      blockOverlay.style.display = 'block';
-    }
-  });
-
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(historyClose, 'click', function (e) {
-    blockOverlay.style.display = 'none';
-    openModal.style.display = 'none';
-  }); //셀렉트박스값 변경
-
-
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(selectRound, 'change', function (e) {
-    totalRound = e.target.value;
-  }); //시작
-
-
-  Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["_addEventLinsten"])(startBtn, 'click', function (e) {
-    if (isFinalRound == false && isfinished != true) {
-      alert("아직 게임이 종료되지않았습니다. ");
-      return;
-    }
-
-    if (selectRound.value == undefined || selectRound.value == '') {
-      //만약에 최소가 16강이라고했는데 그 이상의 케릭터가 없다면 최대 라운드로
-      totalRound = totalRound > maxRound ? maxRound : totalRound;
-      alert("라운드 미선택시 " + totalRound + '강 으로 시작 합니다.');
-    }
-
-    _init();
-  });
+  }
 }; //게임 초기 설정
 
 
